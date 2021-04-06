@@ -21,9 +21,19 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch --mode=development"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisaugust29/myhelpapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chrisaugust29/myhelpapp/issues"
+  },
+  "homepage": "https://github.com/chrisaugust29/myhelpapp#readme"
 }
