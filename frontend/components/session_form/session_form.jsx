@@ -12,7 +12,7 @@ class SessionForm extends React.Component {
         password: ""
     };
     this.handleSubmit = this.handleSubmit.bind(this);
-
+    this.demoUser = this.demoUser.bind(this)
   }
 
     update(field) {
@@ -27,10 +27,15 @@ class SessionForm extends React.Component {
     this.props.processForm(user);
   }
 
+  demoUser() {
+   this.setState({ username: "Demothehelper", password: "password"})
+   this.handleSubmit()
+  }
+
   renderErrors() {
   
     return(
-        <div classname="creation-error">
+        <div className="creation-error">
       <ul>
         {this.props.errors.map((error, i) => (
           <li key={`error-${i}`}>
@@ -42,15 +47,15 @@ class SessionForm extends React.Component {
     );
   }
 
+
   render() {
    
      if (this.props.formType == 'Login') {
          return (
             <div className="login-form">
-                <header>Login/Join HelpApp</header>
+                <header>Login to HelpApp</header>
                 <form onSubmit={this.handleSubmit}>
-                <br/>
-                Signup for Free! {this.props.navLink}
+                {this.renderErrors()}
                 <br />
                 <label>Username:
                 <input type="text"
@@ -70,15 +75,15 @@ class SessionForm extends React.Component {
                 <br/>
                 <input className="session-submit" type="submit" value={this.props.formType} />
                 <br/>
+                <button className="demo-user" onClick={() => this.demoUser()}>DEMO User Login</button>
             </form>
         </div>
         )} else if (this.props.formType === 'Sign Up'){
             return (
                 <div className="login-form">
-                    <header>Login/Join HelpApp</header>
                     <form onSubmit={this.handleSubmit}>
-                        <br />
                 Signup for Free! {this.props.navLink}
+                        {this.renderErrors()}
                 <br />
                         <label>Username:
                 <input type="text"
