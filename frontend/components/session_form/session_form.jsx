@@ -21,39 +21,44 @@ class SessionForm extends React.Component {
         });
     }
 
-  handleSubmit(e) {
-    e.preventDefault();
-    const user = Object.assign({}, this.state);
-    this.props.processForm(user);
+    handleSubmit(e) {
+        e.preventDefault();
+        const user = Object.assign({}, this.state);
+        this.props.processForm(user);
   }
 
-  demoUser() {
-   this.setState({ username: "Demothehelper", password: "password"})
-   this.handleSubmit()
-  }
+    demoUser() {
+        this.setState({ username: "Demothehelper", password: "password"})
+        this.handleSubmit()
+    }
 
-  renderErrors() {
-  
-    return(
-        <div className="creation-error">
-      <ul>
-        {this.props.errors.map((error, i) => (
-          <li key={`error-${i}`}>
-            {error}
-          </li>
-        ))}
-      </ul>
-      </div>
-    );
-  }
+    componentDidMount() {
+        this.props.errorClear()
+    }
+
+    renderErrors() {
+    
+        return(
+            <div className="creation-error">
+        <ul>
+            {this.props.errors.map((error, i) => (
+            <li key={`error-${i}`}>
+                {error}
+            </li>
+            ))}
+        </ul>
+        </div>
+        );
+    }
 
 
-  render() {
+    render() {
    
      if (this.props.formType == 'Login') {
          return (
             <div className="login-form">
                 <header>Login to HelpApp</header>
+                {/* <Link to="/"><img className="logo" src={window.logo.png}/></Link> */}
                 <form onSubmit={this.handleSubmit}>
                 {this.renderErrors()}
                 <br />
