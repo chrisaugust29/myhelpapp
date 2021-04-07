@@ -1,0 +1,22 @@
+.login-signup {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+.left > * {
+    margin-right: 1.5rem;
+} 
+
+.right > * {
+    margin-left: 1.5rem;
+}
+
+.ramen {
+    position: absolute;
+    z-index: -1;
+}
