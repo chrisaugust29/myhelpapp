@@ -13,7 +13,7 @@ const Director = ({currentUser, logout}) => {
 const  handlelogout = () => (
 
         <nav className="handlelogout-bar">
-            { currentUser.username }
+            <div className ="currentuserbar">{ currentUser.username }</div>
             <button className='logout-button' onClick={logout}>Log Out</button>
         </nav>
     );
