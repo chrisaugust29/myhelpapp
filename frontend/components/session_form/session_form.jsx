@@ -67,7 +67,6 @@ class SessionForm extends React.Component {
                                         <h2 className ="logintop">Login to Help</h2>
                                         <p className ="sublogintop">New to Help? <Link className="signup1"to="/signup"> Sign Up</Link></p> <br/>
                                         <p className="terms">By logging in, you agree to Help’s Terms of Service and Privacy Policy.</p>
-                                        
                                         <p className="or"><span className="or-span">OR</span></p>
                                         <form onSubmit={this.handleSubmit}>
                                             <div className="user-pass-login">
@@ -77,6 +76,7 @@ class SessionForm extends React.Component {
                                                         value={this.state.username}
                                                         onChange={this.update('username')}
                                                         className="login-input"
+                                                        required="required"
                                                     />
                                                 </label>
                                                 <label>
@@ -85,6 +85,7 @@ class SessionForm extends React.Component {
                                                         value={this.state.password}
                                                         onChange={this.update('password')}
                                                         className="login-input"
+                                                        required="required"
                                                     />
                                                 </label>
                                             </div>
@@ -129,6 +130,7 @@ class SessionForm extends React.Component {
                                                     value={this.state.username}
                                                     onChange={this.update('username')}
                                                     className="suserinput"
+                                                    required="required"
                                                     />
                                                 </label>
                                                 <br />
@@ -138,6 +140,7 @@ class SessionForm extends React.Component {
                                                     value={this.state.password}
                                                     onChange={this.update('password')}
                                                     className="spassinput"
+                                                    required="required"
                                                     />
                                                 </label>
                                                 <br />
@@ -147,6 +150,7 @@ class SessionForm extends React.Component {
                                                     value={this.state.email}
                                                     onChange={this.update('email')}
                                                     className="semailinput"
+                                                    required="required"
                                                     />
                                                 </label>
                                                 <br />
@@ -156,6 +160,7 @@ class SessionForm extends React.Component {
                                                     value={this.state.first_name}
                                                     onChange={this.update('first_name')}
                                                     className="fname-input"
+                                                    required="required"
                                                     />
                                                 </label>
                                                 <br />
@@ -165,6 +170,7 @@ class SessionForm extends React.Component {
                                                     value={this.state.last_name}
                                                     onChange={this.update('last_name')}
                                                     className="lname-input"
+                                                    required="required"
                                                     />
                                                 </label> 
                                                 <input className="session-submit" type="submit" value={this.props.formType} />
