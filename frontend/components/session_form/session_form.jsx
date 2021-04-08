@@ -28,8 +28,8 @@ class SessionForm extends React.Component {
   }
 
     demoUser() {
-        this.setState({ username: "Demothehelper", password: "password"})
-        this.handleSubmit()
+       let user1 = this.setState({ username: "Demothehelper", password: "password"})
+        this.handleSubmit(user1)
     }
 
     componentDidMount() {
@@ -67,7 +67,7 @@ class SessionForm extends React.Component {
                                         <h2 className ="logintop">Login to Help</h2>
                                         <p className ="sublogintop">New to Help? <Link className="signup1"to="/signup"> Sign Up</Link></p> <br/>
                                         <p className="terms">By logging in, you agree to Help’s Terms of Service and Privacy Policy.</p>
-                                        <button className="demo-user" onClick={() => this.demoUser()}>Demo User Login</button>
+                                        
                                         <p className="or"><span className="or-span">OR</span></p>
                                         <form onSubmit={this.handleSubmit}>
                                             <div className="user-pass-login">
@@ -91,6 +91,7 @@ class SessionForm extends React.Component {
                                             <br />
                                             <input className="session-submit" type="submit" value={this.props.formType}
                                             />
+                                            <button className="demo-user" onClick={() => this.demoUser()}>Demo User Login</button> <br />
                                             <p className="under-submit">New to Help? <Link className="under-submit-link" to="/signup"> Sign Up</Link></p>
                                             <br />
                                         </form>
