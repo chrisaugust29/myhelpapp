@@ -4,17 +4,14 @@ import SignupFormContainer from './session_form/signup_form_container';
 import LoginFormContainer from "./session_form/login_form_container";
 import DirectorContainter from "./director/director_container";
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
-import Navbar from "./director/navbar";
+import Splash from "./splash"
 
 const App = () => (
     <div>
-        <Link to="/" className="logo-link">
-            <h1>Help App</h1>
-        </Link>
      < Switch>
         <AuthRoute exact path="/signup" component={SignupFormContainer} />
         <AuthRoute exact path="/login" component={LoginFormContainer} />
-        <Route exact path="/" component={Navbar} />
+        <Route exact path="/" component={Splash} />
         <Route render={() => <Redirect to={{ pathname: "/" }} />} />
     </Switch>
     </div>
