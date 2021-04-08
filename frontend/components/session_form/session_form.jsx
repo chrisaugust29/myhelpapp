@@ -37,126 +37,150 @@ class SessionForm extends React.Component {
     }
 
     renderErrors() {
-    
         return(
-            <div className="creation-error">
-        <ul>
-            {this.props.errors.map((error, i) => (
-            <li key={`error-${i}`}>
-                {error}
-            </li>
-            ))}
-        </ul>
-        </div>
-        );
-    }
-
+                <ul>
+                    {this.props.errors.map((error, i) => (
+                    <li className="popout-error" key={`error-${i}`}>
+                        <button className="errorbutton" onClick={this.props.errorClear}>X</button>
+                        {error}
+                    </li>
+                    ))}
+                </ul>
+        )};
 
     render() {
    
      if (this.props.formType == 'Login') {
          return (
-             <div>
-                 <div className="outer-container"> 
-                    <div className ="link-div">
+            <> 
+                <header className="outer-header">
+                    <Link to="/" className="logo-link2">
+                        <img className="logo" src={window.logo}/>
+                    </Link>
+                </header>
+                    <div className ="login-form-box">  
+                        <div className ="wrap2"> 
+                            {this.renderErrors()}
+                            <div className = "wrap1">
+                                <div className="login-form">
+                                    <div className ="login-form-top">
+                                        <h2 className ="logintop">Login to Help</h2>
+                                        <p className ="sublogintop">New to Help? <Link className="signup1"to="/signup"> Sign Up</Link></p> <br/>
+                                        <p className="terms">By logging in, you agree to Help’s Terms of Service and Privacy Policy.</p>
+                                        <button className="demo-user" onClick={() => this.demoUser()}>Demo User Login</button>
+                                        <p className="or"><span className="or-span">OR</span></p>
+                                        <form onSubmit={this.handleSubmit}>
+                                            <div className="user-pass-login">
+                                                <label>
+                                                    <input type="text"
+                                                        placeholder="Username"
+                                                        value={this.state.username}
+                                                        onChange={this.update('username')}
+                                                        className="login-input"
+                                                    />
+                                                </label>
+                                                <label>
+                                                    <input type="password"
+                                                        placeholder="Password"
+                                                        value={this.state.password}
+                                                        onChange={this.update('password')}
+                                                        className="login-input"
+                                                    />
+                                                </label>
+                                            </div>
+                                            <br />
+                                            <input className="session-submit" type="submit" value={this.props.formType}
+                                            />
+                                            <p className="under-submit">New to Help? <Link className="under-submit-link" to="/signup"> Sign Up</Link></p>
+                                            <br />
+                                        </form>
+                                    </div>
+                                    <div className="login-img">
+                                     <img className="login-img" src={window.loginimg} />
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+        </>
+        )} else if (this.props.formType === 'Sign Up'){
+            return (
+                <>
+                    <header className="outer-header">
                         <Link to="/" className="logo-link2">
                             <img className="logo" src={window.logo} />
                         </Link>
-                    </div>
-                 </div>
-                 
-                <div className="login-form">
-                    <h2 className ="logintop">Login to Help</h2><br />
-                    <p className ="sublogintop">New to Help?<Link to="signup">Sign Up</Link></p><br/>
-                    <p className="terms">By logging in, you agree to Help’s Terms of Service and Privacy Policy.</p>  <br />
-                    <p className="or"><span className="or-span">OR</span></p>
-
-                    <form onSubmit={this.handleSubmit}>
-                    {this.renderErrors()}
-                    <br />
-                    <label>Username:
-                    <input type="text"
-                        value={this.state.username}
-                        onChange={this.update('username')}
-                        className="login-input"
-                    />
-                    </label>
-                    <br/>
-                    <label>Password:
-                    <input type="password"
-                        value={this.state.password}
-                        onChange={this.update('password')}
-                        className="login-input"
-                    />
-                    </label>     
-                    <br/>
-                    <input className="session-submit" type="submit" value={this.props.formType} />
-                    <br/>
-                    <button className="demo-user" onClick={() => this.demoUser()}>DEMO User Login</button>
-                </form>
-            </div>
-        </div>
-        )} else if (this.props.formType === 'Sign Up'){
-            return (
-                <div>
-                    <div className="outer-container">
-                        <div className="link-div">
-                            <Link to="/" className="logo-link2">
-                                <img className="logo" src={window.logo} />
-                            </Link>
+                    </header>
+                    <div className="login-form-box"> 
+                        <div className="wrap2">
+                            {this.renderErrors()}
+                            <div className="wrap1">
+                                <div className="login-form">
+                                    <div className="login-form-top">
+                                        <h2 className="signuptop">Sign Up for Help</h2>
+                                        <p className="connect">Connect with great local businesses.</p>
+                                        <p className="continue">By continuing, you agree to Help's Terms of Service and acknowledge Help's Policy.</p>
+                                        <p className="or2"><span className="or-span">OR</span></p>
+                                        <form onSubmit={this.handleSubmit}>
+                                                <label>
+                                                    <input type="text"
+                                                    placeholder ="Username"
+                                                    value={this.state.username}
+                                                    onChange={this.update('username')}
+                                                    className="suserinput"
+                                                    />
+                                                </label>
+                                                <br />
+                                                <label>
+                                                    <input type="password"
+                                                    placeholder="Password"
+                                                    value={this.state.password}
+                                                    onChange={this.update('password')}
+                                                    className="spassinput"
+                                                    />
+                                                </label>
+                                                <br />
+                                                <label>
+                                                <input type="email"
+                                                    placeholder="Email"
+                                                    value={this.state.email}
+                                                    onChange={this.update('email')}
+                                                    className="semailinput"
+                                                    />
+                                                </label>
+                                                <br />
+                                                <label>
+                                                    <input type="text"
+                                                    placeholder="First Name"
+                                                    value={this.state.first_name}
+                                                    onChange={this.update('first_name')}
+                                                    className="fname-input"
+                                                    />
+                                                </label>
+                                                <br />
+                                                <label> 
+                                                 <input type="text"
+                                                    placeholder="Last Name"
+                                                    value={this.state.last_name}
+                                                    onChange={this.update('last_name')}
+                                                    className="lname-input"
+                                                    />
+                                                </label> 
+                                                <input className="session-submit" type="submit" value={this.props.formType} />
+                                         </form>
+                                        <p className="under-submit1">Already a Helper? <Link className="under-submit-link1" to="/login"> Log In</Link></p>
+                                    </div>
+                                    <div className="login-img">
+                                        <img className="login-img" src={window.loginimg} />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className="signup-form">
-                        <form onSubmit={this.handleSubmit}>
-                    Signup for Free! {this.props.navLink}
-                            {this.renderErrors()}
-                    <br />
-                            <label>Username:
-                    <input type="text"
-                                    value={this.state.username}
-                                    onChange={this.update('username')}
-                                    className="login-input"
-                                />
-                            </label>
-                            <br />
-                            <label>Password:
-                    <input type="password"
-                                    value={this.state.password}
-                                    onChange={this.update('password')}
-                                    className="login-input"
-                                />
-                            </label>
-                            <br />
-                            <label>Email:
-                    <input type="email"
-                                    value={this.state.email}
-                                    onChange={this.update('email')}
-                                    className="login-input"
-                                />
-                            </label>
-                            <br />
-                            <label>First Name:
-                    <input type="text"
-                                    value={this.state.first_name}
-                                    onChange={this.update('first_name')}
-                                    className="login-input"
-                                />
-                            </label>
-                            <br />
-                            <label>Last Name:
-                    <input type="text"
-                                    value={this.state.last_name}
-                                    onChange={this.update('last_name')}
-                                    className="login-input"
-                                />
-                            </label> <br />
-                            <input className="session-submit" type="submit" value={this.props.formType} />
-                        </form>
-                    </div>
-                </div>
-            )
+                </>
+                )
+            }
         }
     }
-}
 
 export default SessionForm;

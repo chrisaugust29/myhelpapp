@@ -1,0 +1,109 @@
+.signuptop {
+     font-weight: bold;
+    margin-bottom: -5px;
+    color: red;
+    font-size: 24px;
+}
+
+.connect {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.continue {
+    font-size: 11px;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+}
+
+.or2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #ccc; 
+    line-height: 0.1em;
+    margin: 15px 0 20px; 
+    color: #ccc
+}
+.login-input{
+    margin: 5px;
+    width: 95%;
+    border-radius: 2px
+}
+.suserinput{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: -7px;
+    line-height: 1;
+    font-size: 13px;
+    padding: 8px 8px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+.spassinput {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: -7px;
+    line-height: 1.3;
+    font-size: 13px;
+    padding: 8px 8px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+.semailinput{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: -7px;
+    line-height: 1.3;
+    font-size: 13px;
+    padding: 8px 8px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+.fname-input{
+    margin-bottom: 8px;
+    width: 50%;
+    box-sizing: border-box;
+    line-height: 1.3;
+    font-size: 13px;
+    padding: 8px 8px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    float: left;
+        
+}
+
+.lname-input{
+    margin-bottom: 8px;
+    width: 48%;
+    box-sizing: border-box;
+    line-height: 1.3;
+    font-size: 13px;
+    padding: 8px 8px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    margin-left: 5px;
+    margin-top: -23px;
+    float: right;
+}
+/* under submit button on bottom */
+.under-submit1 {
+  color: #999;
+  font-size: 12px;
+  margin-top: 3px;
+  float: right;
+}
+
+.under-submit-link1 {
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 3px;
+  color: blue;
+  vertical-align: baseline;
+}
+

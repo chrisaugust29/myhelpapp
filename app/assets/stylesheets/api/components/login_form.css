@@ -1,0 +1,167 @@
+/* login-form header */
+
+.outer-header {
+  background-color: red;
+  display: flex;
+  justify-content: center
+}
+.logo{
+  display: flex;
+  padding: 4px 0;
+  height: 100px;
+  width: 200px;
+  padding-right: 30px;
+}
+/* login form */
+
+.login-form-box {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 120px;
+
+}
+
+.login-img {
+    display: flex;
+    align-content: flex-end;
+    height: 342px;
+    width: 382px;
+    margin-left: 100px; 
+}
+
+.login-form {
+    text-align: center;
+    /* width: 275px; */
+    padding-right: 200px;
+    padding-top: 45px;
+    padding-left: 10px;
+    display: flex;
+}
+
+.login-form-top {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.logintop {
+    font-weight: bold;
+    margin-bottom: -5px;
+    color: red;
+    font-size: 24px;
+}
+
+
+.sublogintop {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.signup1 {
+  font-size: 16px;
+  color: blue;
+  text-decoration: underline;
+}
+
+.terms {
+    color: rgb(105, 105, 105);
+    font-size: 12px;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+    margin-top: -6px;
+}
+
+.or {
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #ccc; 
+   line-height: 0.1em;
+   margin: 30px 0 20px; 
+   color: #ccc
+}
+
+.or-span {
+      background:#fff; 
+    padding:0 10px; 
+}
+
+/* Username and password and login button */
+.login-input{
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    line-height: 1.3;
+    font-size: 13px;
+    padding: 8px 8px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+.session-submit{
+    width: 100%;
+    cursor: pointer;
+    padding: 7px;
+    font-size: 16px;
+    color: #fff;
+    background: red;
+    border: 1px solid red;
+    border-radius: 4px;
+    font-weight: bold;
+  
+}
+
+.demo-user {
+  width: 100%;
+  cursor: pointer;
+  padding: 7px;
+  font-size: 16px;
+  color: #fff;
+  background: blue;
+  border: 1px solid blue;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.under-submit {
+  color: #999;
+  font-size: 12px;
+  margin-top: 3px;
+  float: right;
+}
+
+.under-submit-link {
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 3px;
+  color: blue;
+  vertical-align: baseline;
+}
+
+
+.wrap2 {
+  display: flex;
+  flex-direction: column;
+}
+/* render errors */
+.popout-error {
+  margin: 10px 0px;
+  padding: 12px;
+  color: black;
+  background-color: #ebb4b4;
+  position: relative;
+  top: -100px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.errorbutton {
+  cursor: pointer;
+  background: #f5bdbd;
+  border: none;
+  color: #5c5c5c;
+  font-size: 18px;
+}

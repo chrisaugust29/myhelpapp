@@ -4,6 +4,41 @@
     align-items: center;
 }
 
+.director-signup {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-right: 35px;
+    padding: 12px 26px 12px;
+}
+.director-login {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-right: 35px;
+    padding: 12px 26px 12px;
+}
+
+.handlelogout-bar {
+ 
+}
+
+.logout-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 18px 10px;
+    color: black;
+    font-weight: bold;
+    padding-right: 20px;
+    cursor: pointer;
+}
 .right {
     display: flex;
     align-items: center;
