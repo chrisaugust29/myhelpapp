@@ -7,6 +7,11 @@ class User < ApplicationRecord
     attr_reader :password
     after_initialize :ensure_session_token
 
+    has_many :businesses, 
+    foreign_key: :creator_id,
+    class_name: "Business"
+
+
     #ripes
     def reset_session_token!
         self.session_token = SecureRandom::urlsafe_base64

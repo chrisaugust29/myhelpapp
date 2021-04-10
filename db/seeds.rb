@@ -78,7 +78,7 @@ ActiveRecord::Base
     city: "Las Vegas",
     zip_code: "89109",
     webpage: "https://www.caesars.com/caesars-palace/restaurants/hells-kitchen",
-    phone_number: "702-731-7373,"
+    phone_number: "702-731-7373",
     state: "NV",
     price: 4
   )
@@ -86,7 +86,7 @@ ActiveRecord::Base
   bis3 = Business.create!(
     name: "Boiling Crab",
     creator_id: 3,
-    category: "Seafood",
+    category: "American",
     street: "1631 E Capitol Expy Ste",
     city: "San Jose",
     zip_code: "95121",
@@ -107,4 +107,17 @@ ActiveRecord::Base
     phone_number: "408-532-6147",
     state: "NY",
     price: 2
+  )
+
+   bis5 = Business.create!(
+    name: "Sweetgreen",
+    creator_id: 5,
+    category: "Healthy",
+    street: "11 E 3rd Ave",
+    city: "San Mateo",
+    zip_code: "650-753-6500",
+    webpage: "order.sweetgreen.com",
+    phone_number: "408-532-6147",
+    state: "CA",
+    price: 1
   )

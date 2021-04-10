@@ -11,8 +11,7 @@ const Director = ({currentUser, logout}) => {
     );
 
 const  handlelogout = () => (
-
-        <nav className="handlelogout-bar">
+    <nav className="handlelogout-bar">
             <div className ="currentuserbar">{ currentUser.username }</div>
             <button className='logout-button' onClick={logout}>Log Out</button>
         </nav>
