@@ -19,7 +19,7 @@ class Api::BusinessesController < ApplicationController
 
     def show 
         @business = Business.find(params[:id])
-        render :show
+        render "api/businesses/show"
     end
 
     def update
@@ -34,7 +34,7 @@ class Api::BusinessesController < ApplicationController
     private
 
     def business_params
-        params.require(:user).permit(:name, :category, :street, :city, :state, :phone_number, :price)
+        params.require(:user).permit( :name, :category, :street, :city, :state, :phone_number, :price)
     end
     
 end
