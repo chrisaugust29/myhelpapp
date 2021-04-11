@@ -8,6 +8,10 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import Splash from "./splash";
 import BusinessShowContainer from './business/business_show_container'
 import BusinessIndexContainer from './business/business_index_container'
+import AmericanIndex from './business/categories/american_index'
+import JapaneseIndex from './business/categories/japanese_index'
+import HealthyIndex from './business/categories/healthy_index'
+import BarsIndex from './business/categories/bars_index'
 
 const App = () => (
     <div>
@@ -18,6 +22,10 @@ const App = () => (
         {/* <Route exact path="/" component={Splash} /> */}
         <Route exact path="/businesses" component={BusinessIndexContainer} />
         <Route exact path="/businesses/:id" component={BusinessShowContainer} />
+        <Route exact path="/businesses/american" component={AmericanIndex} />
+        <Route exact path="/businesses/japanese" component={JapaneseIndex} />
+        <Route exact path="/businesses/healthy" component={HealthyIndex} />
+        <Route exact path="/businesses/bars" component={BarsIndex} />
         <Route render={() => <Redirect to={{ pathname: "/" }} />} />
     </Switch>
     </div>
