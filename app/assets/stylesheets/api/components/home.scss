@@ -1,0 +1,167 @@
+// logos and image 
+.logo1{
+    width: 150px;
+    height: auto;
+    text-indent: -1000em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// top 
+.right-top-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 30px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-logout-button{
+    color: #fff;
+    border: 2px solid #fff;
+    font-weight: 700;
+    box-shadow: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 80px;
+    height: 35px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.splash-nav1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    margin-top: 25px;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+}
+
+.splash-to-busi {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    align-items: center;
+    font-weight: 700;
+}
+
+// main
+.splash-main {
+    background-image: asset-url("ramen.jpg");
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+// category box 
+
+.splash-itembox-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+}
+
+.splash-box-name {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d32323;
+}
+
+.splash-item-box {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 900px;
+    justify-content: space-between;
+    
+}
+
+.splashcategory {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 225px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.all-categories-pic {
+    background-image: asset-url("busi.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-position-x: -20px;
+    height: 80%
+}
+
+.all-category-words {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d32323;
+    font-size: 14px;
+    font-weight: bold;
+    height: 10%;
+    
+}
+
+.american-pic {
+    background-image: asset-url("american.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -20px;
+    height: 80%
+}
+
+.american-words {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d32323;
+    font-size: 14px;
+    font-weight: bold;
+    height: 10%;
+}
+
+.japan-pic {
+    background-image: asset-url("japan.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80%
+}
+
+.japan-words {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d32323;
+    font-size: 14px;
+    font-weight: bold;
+    height: 10%;
+}
+
+.bar-pic {
+    background-image: asset-url("bar.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80%
+}
+
+.bar-words {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d32323;
+    font-size: 14px;
+    font-weight: bold;
+    height: 10%;
+}

@@ -36,8 +36,7 @@ class BusinessShow extends React.Component {
                                 <li className="time"><span className="show-open-tag">Opens;</span>9:00AM - 9:00PM</li>
                                 <li>{street},{city},{state}{zip_code}</li>
                                 <li>{phone_number}</li>
-                                {/* <li>{webpage}</li> */}
-                                <a href="{webpage}">{webpage}</a>
+                                <li>{webpage}</li>
                             </ul>
                         </div>
                     </div>
