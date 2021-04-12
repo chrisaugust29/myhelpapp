@@ -1,4 +1,4 @@
-import React from 'React'
+import React from 'react'
 import { Link } from 'react-router-dom';
 import BusinessIndexItem from "./business_index_item";
 import HeaderContainer from '../header/header_container'
