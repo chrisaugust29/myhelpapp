@@ -15,13 +15,16 @@ class Header extends React.Component {
 
     render() {
         return (
-             <div className="pbusi-nav-bar-">
+             <div className="pbusi-nav-bar">
                 <div className="pbusi-nav-top">
                     <div className="busi-nav-top">
                         <div className="business-logo">
-                            <p> <Link to="/">Help</Link></p>
+                            <Link to="/" className="logo-link">
+                                <img className="logo1" src={window.logo} />
+                            </Link>
                         </div>
                         <div className="business-nav-search">
+                            <p>Search bar should be here</p>
                         </div>
                         {this.renderHeadBar()}
                     </div>
@@ -29,7 +32,7 @@ class Header extends React.Component {
 
                 <div className="busi-categories">
                     <div className="busi-category-box">
-                        <div className="cate-item">
+                        <div className="nav-bar-category-item">
                             <Link to="/"> <i className="fab fa-yelp"></i> Help! </Link>
                         </div>
                         <div className="nav-bar-category-item">
@@ -74,7 +77,7 @@ class Header extends React.Component {
             return (
                 <div id="logout" className="head-bar-right">
                     <Link to="/" className="head-to-home">
-                        HELP
+                        Hello Helper!
                  </Link>
                     <button onClick={this.handleLogout} className="head-to-home">
                         Sign Out
