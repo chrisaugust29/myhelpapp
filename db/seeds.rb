@@ -69,6 +69,9 @@ ActiveRecord::Base
     state: "CA",
     price: "$$"
   )
+  # a1 = open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_1.jpg')
+  # bis1.photos.attach(io: a1, filename: 'american_1.jpg')
+
 
   bis2 = Business.create!(
     name: "Hell's Kitchen",
@@ -124,7 +127,7 @@ ActiveRecord::Base
 
    bis6 = Business.create!(
     name: "Ginto",
-    creator_id: 6,
+    creator_id: 4,
     category: "Japanese",
     street: "658 Market St",
     city: "San Francisco",
@@ -137,7 +140,7 @@ ActiveRecord::Base
 
    bis7 = Business.create!(
     name: "Akikos",
-    creator_id: 7,
+    creator_id: 4,
     category: "Japanese",
     street: "431 Bush St",
     city: "San Francisco",
@@ -150,7 +153,7 @@ ActiveRecord::Base
 
    bis8 = Business.create!(
     name: "Rintaro",
-    creator_id: 8,
+    creator_id: 4,
     category: "Japanese",
     street: "82 14th St",
     city: "San Francisco",
@@ -163,7 +166,7 @@ ActiveRecord::Base
 
   bis8 = Business.create!(
     name: "Rintaro",
-    creator_id: 9,
+    creator_id: 4,
     category: "Japanese",
     street: "82 14th St",
     city: "San Francisco",
@@ -176,7 +179,7 @@ ActiveRecord::Base
 
    bis9 = Business.create!(
     name: "Grubbies",
-    creator_id: 9,
+    creator_id: 4,
     category: "Japanese",
     street: "123 2nd St",
     city: "San Francisco",
@@ -189,7 +192,7 @@ ActiveRecord::Base
 
   bis10 = Business.create!(
     name: "Wako",
-    creator_id: 10,
+    creator_id: 4,
     category: "Japanese",
     street: "211 Clement St",
     city: "San Francisco",
@@ -202,7 +205,7 @@ ActiveRecord::Base
 
    bis11 = Business.create!(
     name: "Top Hops",
-    creator_id: 11,
+    creator_id: 4,
     category: "Bar",
     street: "94 Orchard St",
     city: "New York",
@@ -215,7 +218,7 @@ ActiveRecord::Base
 
    bis12 = Business.create!(
     name: "Arena SF",
-    creator_id: 12,
+    creator_id: 4,
     category: "Bar",
     street: "2565 Mission St",
     city: "SF",
@@ -228,7 +231,7 @@ ActiveRecord::Base
 
   bis13 = Business.create!(
     name: "Del Mar",
-    creator_id: 13,
+    creator_id: 4,
     category: "Bar",
     street: "2125 Lobard St",
     city: "SF",
@@ -241,7 +244,7 @@ ActiveRecord::Base
 
    bis14 = Business.create!(
     name: "Lusk",
-    creator_id: 14,
+    creator_id: 4,
     category: "Bar",
     street: "25 Lusk St",
     city: "SF",
@@ -254,7 +257,7 @@ ActiveRecord::Base
 
   bis15 = Business.create!(
     name: "Jaxson",
-    creator_id: 15,
+    creator_id: 4,
     category: "Bar",
     street: "321 Filmore St",
     city: "SF",
@@ -266,7 +269,7 @@ ActiveRecord::Base
   )
   bis16 = Business.create!(
    name: "Sweetgreen",
-    creator_id: 16,
+    creator_id: 4,
     category: "Healthy",
     street: "11 E 3rd Ave",
     city: "San Mateo",
@@ -276,3 +279,60 @@ ActiveRecord::Base
     state: "CA",
     price: "$"
   )
+
+  bis17 = Business.create!(
+   name: "Butter Lettuce",
+    creator_id: 4,
+    category: "Healthy",
+    street: "2268 Chestnut St",
+    city: "San Francisco",
+    zip_code: "94532",
+    webpage: "butterlettuce.com",
+    phone_number: "415-521-6147",
+    state: "CA",
+    price: "$$"
+  )
+
+   bis18 = Business.create!(
+    name: "Mixt",
+    creator_id: 4,
+    category: "Healthy",
+    street: "3130 Filmore St",
+    city: "San Francisco",
+    zip_code: "94532",
+    webpage: "Mixt.com",
+    phone_number: "415-321-6147",
+    state: "CA",
+    price: "$"
+  )
+
+    bis19 = Business.create!(
+    name: "Greens Place",
+    creator_id: 4,
+    category: "Healthy",
+    street: "2 Marina Blvd",
+    city: "San Francisco",
+    zip_code: "94532",
+    webpage: "green.com",
+    phone_number: "415-222-3327",
+    state: "CA",
+    price: "$$$"
+  )
+
+    bis20 = Business.create!(
+    name: "Kitiva",
+    creator_id: 4,
+    category: "Healthy",
+    street: "2011 Mission St",
+    city: "San Francisco",
+    zip_code: "94532",
+    webpage: "Kitava.com",
+    phone_number: "415-112-3327",
+    state: "CA",
+    price: "$$$"
+  )
+
+
+  
+
+  

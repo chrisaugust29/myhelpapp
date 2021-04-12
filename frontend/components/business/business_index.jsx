@@ -19,7 +19,7 @@ class BusinessIndex extends React.Component {
                 <div className="busi-index-box">
                     <div className="busi-index-box2">
                         <div className="items-box">
-                            {businesses.map((business) => 
+                            {businesses.map((business, index) => 
                             <BusinessIndexItem
                                 business={business}
                                 fetchBusinesses={fetchBusinesses}

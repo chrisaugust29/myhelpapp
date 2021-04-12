@@ -8,4 +8,6 @@ json.extract! business, :id,
                         :webpage, 
                         :phone_number, 
                         :state, 
-                        :price
+                        :price,
+
+
