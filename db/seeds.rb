@@ -56,31 +56,31 @@ ActiveRecord::Base
     email: "demo123@gmail.com",
     password: 'password'
   )
-
+# american 
   bis1 = Business.create!(
-    name: "Ginto",
+    name: "Hall of Burgers",
     creator_id: 1,
-    category: "Japanese",
-    street: "658 Market St",
+    category: "American",
+    street: "73 Cambon Dr",
     city: "San Francisco",
     zip_code: "94104",
-    webpage: "www.gintoexpress.com",
-    phone_number: "707-583-3058",
+    webpage: "www.flameburgers.com",
+    phone_number: "415-584-3058",
     state: "CA",
-    price: 2
+    price: "$$"
   )
 
   bis2 = Business.create!(
-    name: "Gordon Ramsays Hell's Kitchen",
+    name: "Hell's Kitchen",
     creator_id: 2,
     category: "American",
     street: "3570 Last Vegas Blvd S",
     city: "Las Vegas",
     zip_code: "89109",
-    webpage: "https://www.caesars.com/caesars-palace/restaurants/hells-kitchen",
+    webpage: "japwww.caesars.com/",
     phone_number: "702-731-7373",
     state: "NV",
-    price: 4
+    price: "$$$$"
   )
 
   bis3 = Business.create!(
@@ -93,12 +93,116 @@ ActiveRecord::Base
     webpage: "theboilingcrab.com",
     phone_number: "408-532-6147",
     state: "CA",
-    price: 1
+    price: "$"
   )
 
    bis4 = Business.create!(
-    name: "Top Hops",
+    name: "Original Joe's",
     creator_id: 4,
+    category: "American",
+    street: "11 Genwood Ave",
+    city: "San Francisco",
+    zip_code: "93144",
+    webpage: "orignaljoes.com",
+    phone_number: "408-221-6327",
+    state: "CA",
+    price: "$$$"
+  )
+
+   bis5 = Business.create!(
+    name: "Calibur",
+    creator_id: 5,
+    category: "American",
+    street: "68 West Portal",
+    city: "San Francisco",
+    zip_code: "650-213-6520",
+    webpage: "calibur.com",
+    phone_number: "650-532-2247",
+    state: "CA",
+    price: "$"
+  )
+
+   bis6 = Business.create!(
+    name: "Ginto",
+    creator_id: 6,
+    category: "Japanese",
+    street: "658 Market St",
+    city: "San Francisco",
+    zip_code: "94104",
+    webpage: "gintoexpress.com",
+    phone_number: "707-583-3058",
+    state: "CA",
+    price: "$$"
+  )
+
+   bis7 = Business.create!(
+    name: "Akikos",
+    creator_id: 7,
+    category: "Japanese",
+    street: "431 Bush St",
+    city: "San Francisco",
+    zip_code: "94104",
+    webpage: "akikos.com",
+    phone_number: "415-397-3218",
+    state: "CA",
+    price: "$$$"
+  )
+
+   bis8 = Business.create!(
+    name: "Rintaro",
+    creator_id: 8,
+    category: "Japanese",
+    street: "82 14th St",
+    city: "San Francisco",
+    zip_code: "94104",
+    webpage: "Rintaro.com",
+    phone_number: "415-323-4118",
+    state: "CA",
+    price: "$$$"
+  )
+
+  bis8 = Business.create!(
+    name: "Rintaro",
+    creator_id: 9,
+    category: "Japanese",
+    street: "82 14th St",
+    city: "San Francisco",
+    zip_code: "94104",
+    webpage: "Rintaro.com",
+    phone_number: "415-323-4118",
+    state: "CA",
+    price: "$$$"
+  )
+
+   bis9 = Business.create!(
+    name: "Grubbies",
+    creator_id: 9,
+    category: "Japanese",
+    street: "123 2nd St",
+    city: "San Francisco",
+    zip_code: "94104",
+    webpage: "Grubbies.com",
+    phone_number: "415-323-4118",
+    state: "CA",
+    price: "$$"
+  )
+
+  bis10 = Business.create!(
+    name: "Wako",
+    creator_id: 10,
+    category: "Japanese",
+    street: "211 Clement St",
+    city: "San Francisco",
+    zip_code: "94104",
+    webpage: "Wako.com",
+    phone_number: "415-682-4338",
+    state: "CA",
+    price: "$$$$"
+  )
+
+   bis11 = Business.create!(
+    name: "Top Hops",
+    creator_id: 11,
     category: "Bar",
     street: "94 Orchard St",
     city: "New York",
@@ -106,18 +210,69 @@ ActiveRecord::Base
     webpage: "tophops.com",
     phone_number: "408-532-6147",
     state: "NY",
-    price: 2
+    price: "$$"
   )
 
-   bis5 = Business.create!(
-    name: "Sweetgreen",
-    creator_id: 5,
+   bis12 = Business.create!(
+    name: "Arena SF",
+    creator_id: 12,
+    category: "Bar",
+    street: "2565 Mission St",
+    city: "SF",
+    zip_code: "93241",
+    webpage: "ArenaSF.com",
+    phone_number: "650-273-7468",
+    state: "CA",
+    price: "$$$$"
+  )
+
+  bis13 = Business.create!(
+    name: "Del Mar",
+    creator_id: 13,
+    category: "Bar",
+    street: "2125 Lobard St",
+    city: "SF",
+    zip_code: "93241",
+    webpage: "Delmar.com",
+    phone_number: "415-344-7468",
+    state: "CA",
+    price: "$$$"
+  )
+
+   bis14 = Business.create!(
+    name: "Lusk",
+    creator_id: 14,
+    category: "Bar",
+    street: "25 Lusk St",
+    city: "SF",
+    zip_code: "93241",
+    webpage: "Lusk.com",
+    phone_number: "415-495-7468",
+    state: "CA",
+    price: "$$$"
+  )
+
+  bis15 = Business.create!(
+    name: "Jaxson",
+    creator_id: 15,
+    category: "Bar",
+    street: "321 Filmore St",
+    city: "SF",
+    zip_code: "93241",
+    webpage: "Jaxson.com",
+    phone_number: "415-925-7433",
+    state: "CA",
+    price: "$"
+  )
+  bis16 = Business.create!(
+   name: "Sweetgreen",
+    creator_id: 16,
     category: "Healthy",
     street: "11 E 3rd Ave",
     city: "San Mateo",
     zip_code: "650-753-6500",
     webpage: "order.sweetgreen.com",
-    phone_number: "408-532-6147",
+    phone_number: "415-521-6147",
     state: "CA",
-    price: 1
+    price: "$"
   )

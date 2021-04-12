@@ -18,6 +18,7 @@ class BusinessShow extends React.Component {
             name, category, street, city, state,
             zip_code, webpage, phone_number, price
         } = business;
+        
         return (
             <div>
                 <HeaderContainer />

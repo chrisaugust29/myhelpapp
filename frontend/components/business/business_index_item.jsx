@@ -9,11 +9,12 @@ class BusinessIndexItem extends React.Component {
             <div>
                 <Link to={`/businesses/${id}`}>
                     <li className="index-item-box"> 
-                            {/* <div className="business-index-item-photo">
+                        <div className= "index-big-box">
+                            {/* <div className="index-photo">
                                 <img src={photoUrls[0]} />
                             </div> */}
                             <div className="info-box">
-                                <div className="topinfo">
+                                <div className="info-top-box">
                                     <div className="info-top-left">
                                         <div className="item-name">
                                             {name}
@@ -25,14 +26,14 @@ class BusinessIndexItem extends React.Component {
                                             ></img>
                                         </div> */}
                                         <div className="price">Price:{price}</div>
+                                            <div>{category}</div>
+                                            
+                                        
                                     </div>
-                                    <div className="business-index-item-info">
+                                    <div className="info-item-box">
                                         <ul>
                                             <li>
                                                 {city}
-                                            </li>
-                                            <li>
-                                                {category}
                                             </li>
                                             <li>
                                                 <i className="phone"></i> {phone_number}
@@ -41,14 +42,9 @@ class BusinessIndexItem extends React.Component {
                                                 <i className="street"></i> {street}
                                             </li>
                                             <li>
-                                                <i className="city"></i> {city}
+                                                <i className="state"></i> {state}, <i className="zip"></i> {zip_code}
                                             </li>
-                                            <li>
-                                                <i className="zip"></i> {zip_code}
-                                            </li>
-                                            <li>
-                                                <i className="state"></i> {state}
-                                            </li>
+                
                                         </ul>
                                     </div>
                                 </div>
@@ -59,7 +55,9 @@ class BusinessIndexItem extends React.Component {
                                     </Link>
                                 </div> */}
                             </div>
-                        </li>
+                            
+                        </div>
+                    </li>
                 </Link>
             </div>
 
