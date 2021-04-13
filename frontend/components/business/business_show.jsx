@@ -41,10 +41,10 @@ class BusinessShow extends React.Component {
                             <div className="show-top-info">
                                 <p>{name}</p>
                                 <p className="rating">
-                                    <i className="fas fa-star" />
-                                    <i className="fas fa-star" />
-                                    <i className="fas fa-star" />
-                                    <i className="fas fa-star" />
+                                    <i class='fas fa-star'></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </p>
                                 <p className="biz-info-category">
                                     <span>{price} • {category}</span>

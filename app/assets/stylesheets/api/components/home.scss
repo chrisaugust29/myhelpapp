@@ -1,4 +1,10 @@
 // logos and image 
+.inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo1{
     width: 150px;
     height: auto;
@@ -54,7 +60,8 @@
 // main
 .splash-main {
     background-image: asset-url("ramen.jpg");
-    height: 450px;
+    object-fit: cover;
+    height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
