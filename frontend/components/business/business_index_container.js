@@ -9,7 +9,7 @@ const mapStatetoProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
         fetchBusinesses: () => dispatch(fetchBusinesses()),
-        fetchBusiness: (businessId) => dispatch(fetchBusiness(businessId))
+        // fetchBusiness: (businessId) => dispatch(fetchBusiness(businessId))
 });
 
 export default connect(mapStatetoProps, mapDispatchToProps)(BusinessIndex);

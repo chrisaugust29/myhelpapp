@@ -69,8 +69,8 @@ ActiveRecord::Base
     state: "CA",
     price: "$$"
   )
-  # a1 = open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_1.jpg')
-  # bis1.photos.attach(io: a1, filename: 'american_1.jpg')
+  a1 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_1.jpg')
+  bis1.photos.attach(io: a1, filename: 'american_1.jpg')
 
 
   bis2 = Business.create!(
@@ -85,6 +85,9 @@ ActiveRecord::Base
     state: "NV",
     price: "$$$$"
   )
+
+  a2 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_2.jpg')
+  bis2.photos.attach(io: a2, filename: 'american_2.jpg')
 
   bis3 = Business.create!(
     name: "Boiling Crab",

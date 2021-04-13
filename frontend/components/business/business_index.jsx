@@ -12,24 +12,29 @@ class BusinessIndex extends React.Component {
         this.props.fetchBusinesses();
     }
     render() {
-        let { businesses, fetchBusinesses } = this.props
-        return (
-            <div>
-                <HeaderContainer />
-                <div className="busi-index-box">
-                    <div className="busi-index-box2">
-                        <div className="items-box">
-                            {businesses.map((business, index) => 
-                            <BusinessIndexItem
-                                business={business}
-                                fetchBusinesses={fetchBusinesses}
-                                key={business.id}
-                            />)}
+        // if (!this.props.businesses.length)
+        //     return null;
+        // else {
+            let { businesses, fetchBusinesses } = this.props
+            return (
+                <div>
+                    <HeaderContainer />
+                    <div className="busi-index-box">
+                        <div className="busi-index-box2">
+                            <div className="items-box">
+                                {businesses.map((business, index) => 
+                                <BusinessIndexItem
+                                    business={business}
+                                    // key={business.id}
+                                    key={index}
+                                />)
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        );
+            );
+        //  }
     }
 }
 
