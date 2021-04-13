@@ -71,6 +71,14 @@ ActiveRecord::Base
   )
   a1 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_1.jpg')
   bis1.photos.attach(io: a1, filename: 'american_1.jpg')
+  a1_1 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_1_1.jpg')
+  bis1.photos.attach(io: a1_1, filename: 'american_1-1.jpg')
+  a1_2 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_1_2.jpg')
+  bis1.photos.attach(io: a1_2, filename: 'american_1-2.jpg')
+  a1_3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_1_3.jpg')
+  bis1.photos.attach(io: a1_3, filename: 'american_1-3.jpg')
+  a1_4 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_1_4.jpg')
+  bis1.photos.attach(io: a1_4, filename: 'american_1-4.jpg')
 
 
   bis2 = Business.create!(
@@ -88,6 +96,12 @@ ActiveRecord::Base
 
   a2 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_2.jpg')
   bis2.photos.attach(io: a2, filename: 'american_2.jpg')
+  a1_1 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_1_1.jpg')
+  bis2.photos.attach(io: a1_1, filename: 'american_1-1.jpg')
+  a1_2 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_1_2.jpg')
+  bis2.photos.attach(io: a1_2, filename: 'american_1-2.jpg')
+  a1_3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_1_3.jpg')
+  bis2.photos.attach(io: a1_3, filename: 'american_1-3.jpg')
 
   bis3 = Business.create!(
     name: "Boiling Crab",
@@ -104,6 +118,12 @@ ActiveRecord::Base
 
   a3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_3.jpg')
   bis3.photos.attach(io: a3, filename: 'american_3.jpg')
+  a1_1 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_1_1.jpg')
+  bis3.photos.attach(io: a1_1, filename: 'american_1-1.jpg')
+  a1_2 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_1_2.jpg')
+  bis3.photos.attach(io: a1_2, filename: 'american_1-2.jpg')
+  a1_3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_1_3.jpg')
+  bis3.photos.attach(io: a1_3, filename: 'american_1-3.jpg')
 
    bis4 = Business.create!(
     name: "Original Joe's",
@@ -119,6 +139,13 @@ ActiveRecord::Base
   )
   a4 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_4.jpg')
   bis4.photos.attach(io: a4, filename: 'american_4.jpg')
+  a1_1 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_1_1.jpg')
+  bis4.photos.attach(io: a1_1, filename: 'american_1-1.jpg')
+  a1_2 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_1_2.jpg')
+  bis4.photos.attach(io: a1_2, filename: 'american_1-2.jpg')
+  a1_3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_1_3.jpg')
+  bis4.photos.attach(io: a1_3, filename: 'american_1-3.jpg')
+
 
    bis5 = Business.create!(
     name: "Calibur",
@@ -134,6 +161,13 @@ ActiveRecord::Base
   )
   a5 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_5.jpg')
   bis5.photos.attach(io: a5, filename: 'american_5.jpg')
+  a1_1 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_1_1.jpg')
+  bis5.photos.attach(io: a1_1, filename: 'american_1-1.jpg')
+  a1_2 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_1_2.jpg')
+  bis5.photos.attach(io: a1_2, filename: 'american_1-2.jpg')
+  a1_3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_1_3.jpg')
+  bis5.photos.attach(io: a1_3, filename: 'american_1-3.jpg')
+
 
    bis6 = Business.create!(
     name: "Ginto",
@@ -150,6 +184,12 @@ ActiveRecord::Base
 
   a6 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/japanese_6.jpg')
   bis6.photos.attach(io: a6, filename: 'japanese_6.jpg')
+  a6_1 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/japanese_1_1.jpeg')
+  bis6.photos.attach(io: a6_1, filename: 'japanese_1-1.jpg')
+  a6_2 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/Japanese_1_2.jpeg')
+  bis6.photos.attach(io: a6_2, filename: 'Japanese_1-2.jpg')
+  a6_3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/japaese_1_3.jpeg')
+  bis6.photos.attach(io: a6_3, filename: 'japaese_1-3.jpg')
 
    bis7 = Business.create!(
     name: "Akikos",
@@ -165,6 +205,13 @@ ActiveRecord::Base
   )
   a7 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/japanese_7.jpg')
   bis7.photos.attach(io: a7, filename: 'japanese_7.jpg')
+  a6_1 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/japanese_1_1.jpeg')
+  bis7.photos.attach(io: a6_1, filename: 'japanese_1-1.jpg')
+  a6_2 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/Japanese_1_2.jpeg')
+  bis7.photos.attach(io: a6_2, filename: 'Japanese_1-2.jpg')
+  a6_3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/japaese_1_3.jpeg')
+  bis7.photos.attach(io: a6_3, filename: 'japaese_1-3.jpg')
+
 
 
    bis8 = Business.create!(
@@ -182,6 +229,13 @@ ActiveRecord::Base
 
   a8 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/japanese_8.jpg')
   bis8.photos.attach(io: a8, filename: 'japanese_8.jpg')
+  a6_1 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/japanese_1_1.jpeg')
+  bis8.photos.attach(io: a6_1, filename: 'japanese_1-1.jpg')
+  a6_2 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/Japanese_1_2.jpeg')
+  bis8.photos.attach(io: a6_2, filename: 'Japanese_1-2.jpg')
+  a6_3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/japaese_1_3.jpeg')
+  bis8.photos.attach(io: a6_3, filename: 'japaese_1-3.jpg')
+
 
    bis9 = Business.create!(
     name: "Grubbies",
@@ -198,6 +252,13 @@ ActiveRecord::Base
 
   a9 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/japanese_9.jpg')
   bis9.photos.attach(io: a9, filename: 'japanese_9.jpg')
+  a6_1 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/japanese_1_1.jpeg')
+  bis9.photos.attach(io: a6_1, filename: 'japanese_1-1.jpg')
+  a6_2 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/Japanese_1_2.jpeg')
+  bis9.photos.attach(io: a6_2, filename: 'Japanese_1-2.jpg')
+  a6_3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/japaese_1_3.jpeg')
+  bis9.photos.attach(io: a6_3, filename: 'japaese_1-3.jpg')
+
 
   bis10 = Business.create!(
     name: "Wako",
@@ -213,6 +274,13 @@ ActiveRecord::Base
   )
     a10 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/japanese_10.jpg')
     bis10.photos.attach(io: a10, filename: 'japanese_10.jpg')
+     a6_1 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/japanese_1_1.jpeg')
+    bis10.photos.attach(io: a6_1, filename: 'japanese_1-1.jpg')
+    a6_2 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/Japanese_1_2.jpeg')
+    bis10.photos.attach(io: a6_2, filename: 'Japanese_1-2.jpg')
+    a6_3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/japaese_1_3.jpeg')
+    bis10.photos.attach(io: a6_3, filename: 'japaese_1-3.jpg')
+
 
    bis11 = Business.create!(
     name: "Top Hops",
@@ -228,6 +296,13 @@ ActiveRecord::Base
   )
     a11 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_11.jpg')
     bis11.photos.attach(io: a11, filename: 'bar_11.jpg')
+    a11_1 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_1_1.jpeg')
+    bis11.photos.attach(io: a11_1, filename: 'bar_1-1.jpg')
+    a11_2 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_1_2.jpeg')
+    bis11.photos.attach(io: a11_2, filename: 'bar_1-2.jpg')
+    a11_3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_1_3.jpeg')
+    bis11.photos.attach(io: a11_3, filename: 'bar_1-3.jpg')
+   
 
    bis12 = Business.create!(
     name: "Arena SF",
@@ -243,6 +318,13 @@ ActiveRecord::Base
   )
     a12 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_12.jpg')
     bis12.photos.attach(io: a12, filename: 'bar_12.jpg')
+    a11_1 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_1_1.jpeg')
+    bis12.photos.attach(io: a11_1, filename: 'bar_1-1.jpg')
+    a11_2 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_1_2.jpeg')
+    bis12.photos.attach(io: a11_2, filename: 'bar_1-2.jpg')
+    a11_3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_1_3.jpeg')
+    bis12.photos.attach(io: a11_3, filename: 'bar_1-3.jpg')
+   
 
   bis13 = Business.create!(
     name: "Del Mar",
@@ -258,6 +340,13 @@ ActiveRecord::Base
   )
   a13 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_13.jpg')
   bis13.photos.attach(io: a13, filename: 'bar_13.jpg')
+   a11_1 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_1_1.jpeg')
+    bis13.photos.attach(io: a11_1, filename: 'bar_1-1.jpg')
+    a11_2 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_1_2.jpeg')
+    bis13.photos.attach(io: a11_2, filename: 'bar_1-2.jpg')
+    a11_3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_1_3.jpeg')
+    bis13.photos.attach(io: a11_3, filename: 'bar_1-3.jpg')
+   
 
    bis14 = Business.create!(
     name: "Lusk",
@@ -274,6 +363,13 @@ ActiveRecord::Base
 
     a14 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_14.jpg')
     bis14.photos.attach(io: a14, filename: 'bar_14.jpg')
+     a11_1 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_1_1.jpeg')
+    bis14.photos.attach(io: a11_1, filename: 'bar_1-1.jpg')
+    a11_2 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_1_2.jpeg')
+    bis14.photos.attach(io: a11_2, filename: 'bar_1-2.jpg')
+    a11_3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_1_3.jpeg')
+    bis14.photos.attach(io: a11_3, filename: 'bar_1-3.jpg')
+   
 
   bis15 = Business.create!(
     name: "Jaxson",
@@ -290,6 +386,13 @@ ActiveRecord::Base
 
     a15 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_15.jpg')
     bis15.photos.attach(io: a15, filename: 'bar_15.jpg')
+     a11_1 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_1_1.jpeg')
+    bis15.photos.attach(io: a11_1, filename: 'bar_1-1.jpg')
+    a11_2 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_1_2.jpeg')
+    bis15.photos.attach(io: a11_2, filename: 'bar_1-2.jpg')
+    a11_3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_1_3.jpeg')
+    bis15.photos.attach(io: a11_3, filename: 'bar_1-3.jpg')
+   
 
   bis16 = Business.create!(
    name: "Sweetgreen",
@@ -305,6 +408,12 @@ ActiveRecord::Base
   )
     a16 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_16.jpg')
     bis16.photos.attach(io: a16, filename: 'healthy_16.jpg')
+    a16_1 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_1_1.jpeg')
+    bis16.photos.attach(io: a16_1, filename: 'healthy_1_1.jpg')
+    a16_2 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_1_2.jpeg')
+    bis16.photos.attach(io: a16_2, filename: 'healthy_1_2.jpg')
+    a16_3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_1_3.jpeg')
+    bis16.photos.attach(io: a16_3, filename: 'healthy_1_3.jpg')
 
   bis17 = Business.create!(
    name: "Butter Lettuce",
@@ -320,6 +429,12 @@ ActiveRecord::Base
   )
     a17 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_17.jpg')
     bis17.photos.attach(io: a17, filename: 'healthy_17.jpg')
+     a16_1 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_1_1.jpeg')
+    bis17.photos.attach(io: a16_1, filename: 'healthy_1_1.jpg')
+    a16_2 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_1_2.jpeg')
+    bis17.photos.attach(io: a16_2, filename: 'healthy_1_2.jpg')
+    a16_3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_1_3.jpeg')
+    bis17.photos.attach(io: a16_3, filename: 'healthy_1_3.jpg')
 
    bis18 = Business.create!(
     name: "Mixt",
@@ -335,6 +450,12 @@ ActiveRecord::Base
   )
     a18 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_18.jpg')
     bis18.photos.attach(io: a18, filename: 'healthy_18.jpg')
+     a16_1 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_1_1.jpeg')
+    bis18.photos.attach(io: a16_1, filename: 'healthy_1_1.jpg')
+    a16_2 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_1_2.jpeg')
+    bis18.photos.attach(io: a16_2, filename: 'healthy_1_2.jpg')
+    a16_3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_1_3.jpeg')
+    bis18.photos.attach(io: a16_3, filename: 'healthy_1_3.jpg')
 
     bis19 = Business.create!(
     name: "Greens Place",
@@ -350,6 +471,12 @@ ActiveRecord::Base
   )
     a19 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_19.jpg')
     bis19.photos.attach(io: a19, filename: 'healthy_19.jpg')  
+     a16_1 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_1_1.jpeg')
+    bis19.photos.attach(io: a16_1, filename: 'healthy_1_1.jpg')
+    a16_2 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_1_2.jpeg')
+    bis19.photos.attach(io: a16_2, filename: 'healthy_1_2.jpg')
+    a16_3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_1_3.jpeg')
+    bis19.photos.attach(io: a16_3, filename: 'healthy_1_3.jpg')
 
     bis20 = Business.create!(
     name: "Kitiva",
@@ -365,7 +492,12 @@ ActiveRecord::Base
   )
     a20 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_20.jpg')
     bis20.photos.attach(io: a20, filename: 'healthy_20.jpg')  
-
+   a16_1 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_1_1.jpeg')
+    bis20.photos.attach(io: a16_1, filename: 'healthy_1_1.jpg')
+    a16_2 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_1_2.jpeg')
+    bis20.photos.attach(io: a16_2, filename: 'healthy_1_2.jpg')
+    a16_3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_1_3.jpeg')
+    bis20.photos.attach(io: a16_3, filename: 'healthy_1_3.jpg')
   
 
   

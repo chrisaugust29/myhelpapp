@@ -1,0 +1,119 @@
+// show
+.show-box{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 300px;
+}
+
+.show-box2{
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: fit-content;
+    padding-top: 40px;
+}
+    
+.show-top{
+    border: blue;
+    width: 600px;
+    height: 150px;
+    display: flex;
+    float: left;
+    display: block;
+}   
+
+.show-top-info{
+    border: red;
+}
+.show-top-info p:first-child{
+     font-weight: 650;
+    font-size: 35px;
+    line-height: 36px;
+    color: #122477;
+}
+
+.rating > i {
+    background-color: rgb(223, 27, 27);
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border-radius: 2px;
+    text-align: center;
+    color: white;
+}
+.fas{
+    margin-right: 5px;
+    width: 50%;
+    font-weight: 1000;
+}
+
+.biz-info-category{
+    display: flex;
+}
+
+.biz-info-category > span {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: 380;
+    font-size: 15px;
+    line-height: 18px;
+    color: #7c7988;
+    padding-left: 5px;
+}
+.top-writeareview{
+    display: block;
+    width: 130px;
+    text-align: center;
+    line-height: 20px;
+    color: #dd2626;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.918);
+    border-radius: 5px;
+    font-weight: 650;
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+.contact-info{
+    font-weight: 500;
+    font-size: 15px;
+    color: #252525;
+    padding-left: 18px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+.mid-header{
+    display: block;
+    width: 600px;
+    border-top: 1px solid red;
+    margin-top: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+    
+    font-weight: 700;
+    font-size: 20px;
+    color: #2b273c;
+
+}
+.business-show-hours{
+    
+    margin-bottom: 5px;
+}
+
+.week{
+    font-weight: 700;
+    padding-right: 10px;
+    font-weight: bold;
+    min-width: 100px;
+}

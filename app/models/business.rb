@@ -8,7 +8,7 @@ class Business < ApplicationRecord
     foreign_key: :creator_id,
     class_name: "User"
     
-    has_one_attached :photos
+    has_many_attached :photos
 
 
 

@@ -19,7 +19,6 @@ const App = () => (
         <AuthRoute exact path="/signup" component={SignupFormContainer} />
         <AuthRoute exact path="/login" component={LoginFormContainer} />
         <Route exact path="/" component={HomeContainer} />
-        {/* <Route exact path="/" component={Splash} /> */}
         <Route exact path="/businesses" component={BusinessIndexContainer} />
         <Route exact path="/businesses/:id" component={BusinessShowContainer} />
         <Route exact path="/businesses/american" component={AmericanIndex} />

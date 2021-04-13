@@ -28,8 +28,9 @@ class BusinessIndexItem extends React.Component {
                                                 src="https://i.imgur.com/UkZkm0D.png"
                                             ></img>
                                         </div> */}
+                                        <div>{category}</div>
                                         <div className="price">{price}</div>
-                                            <div>{category}</div>
+                                            
                                             
                                         
                                     </div>

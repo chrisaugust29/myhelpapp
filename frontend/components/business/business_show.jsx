@@ -26,29 +26,52 @@ class BusinessShow extends React.Component {
                 <div>
                     <HeaderContainer />
                     <div className="show-box">
-                        <div className="index-photo">
-                            <img src={photo_url} />
+                        {photo_url.map((photo, idx) => (
+                            <div key={idx} className="imgs-items">
+                                <img src={photo} className="show-img" />
+                            </div>
+                        ))}
+                    </div>    
+                    <div className="show-box2">
+                        <div className="show-top">
+                            <div className="show-top-info">
+                                <p>{name}</p>
+                                <p className="rating">
+                                    <i className="fas fa-star" />
+                                    <i className="fas fa-star" />
+                                    <i className="fas fa-star" />
+                                    <i className="fas fa-star" />
+                                </p>
+                                <p className="biz-info-category">
+                                    <span>{price} • {category}</span>
+        
+                                </p>
+                                <span className="top-writeareview">
+                                    <i className="fas fa-star" /> Write a Review
+                            </span>
+                            </div>
                         </div>
-                        <div className="show-box2">
-                            <div className="show-bname">
-                                <div>{name}</div>
-                            </div>
-                            
-                            {/* add stars image */}
-                            <div className="stars">
-                            </div>
-                            <div className="details-list">
-                                <ul>
-                                    <li>{price}</li>
-                                    <li>{category}</li>
-                                    <li className="time"><span className="show-open-tag">Opens;</span>9:00AM - 9:00PM</li>
-                                    <li>{street},{city},{state}{zip_code}</li>
-                                    <li>{phone_number}</li>
-                                    <li>{webpage}</li>
-                                </ul>
-                            </div>
+                        <div className="contact-info">
+                            <div id="info"><i  />{phone_number}</div>
+                            <div id="info"><i  />{webpage}</div>
+                            <div id="info"><i /> Full Menu</div>
+                            <div id="info"><i /> Contact the Business</div>
                         </div>
+                        <div className="mid-header">
+                             Hours Open
+                        </div>  
+                            <div className="business-show-hours">
+                                <div><p id="week">Mon</p><p>8:30am - 5:30pm</p></div>
+                                <div><p id="week">Tue</p><p>8:30am - 5:30pm</p></div>
+                                <div><p id="week">Wed</p><p>8:30am - 5:30pm</p></div>
+                                <div><p id="week">Thu</p><p>8:30am - 5:30pm</p></div>
+                                <div><p id="week">Fri</p><p>8:30am - 5:30pm</p></div>
+                                <div><p id="week">Sat</p><p>10:30am - 7:30pm</p></div>
+                                <div><p id="week">Sun</p><p>10:30am - 7:30pm</p></div>
+                            </div>
+                        
                     </div>
+                    
                 </div>
             
             );
