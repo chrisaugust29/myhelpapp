@@ -19,15 +19,14 @@
 }
 
 .items-box{
-  
-    margin-right: 40px;
+  margin-right: 50px;
 }
 
 // Index item
 .index-item-box {
     display: flex;
     align-items: center;
-    height: 250px;
+    height: 300px;
     border-top: 1px solid rgba(221, 221, 221, 0.966);
     font-size: 15px;
 
@@ -40,12 +39,21 @@
     flex-direction: row;
 }
 .index-photo{
-    border: solid blue;
+    border-radius: 3px;
+    border: 1px solid #bdbdbdf8;
+    width: 240px;
+    height: 240px;
+    margin-left:14px;
 }
+.photo{
+    height: 100%;
+    display: block;
+    object-fit: cover;
 
+}
 .info-box{
-    border: red;
-    width: 50%
+    margin-left: 16px;
+    width: 375px;
 }
 
 .info-top-box{
@@ -60,8 +68,9 @@
 }
 
 .item-name{
+    margin-top: 50px;
     color: #314f8a;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     
 }
@@ -72,6 +81,7 @@
 }
 
 .info-item-box{
+    margin-top: 50px;
     width: 50%
 }
 

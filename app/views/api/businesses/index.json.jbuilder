@@ -13,7 +13,7 @@
                         :state, 
                         :price
 
-  # json.photoUrls business.photos.map { |file| url_for(file)}
+  # json.photo_url business.photos.map { |file| url_for(file)}
     if business.photos.attached?
         json.photo_url url_for(business.photos)
       else

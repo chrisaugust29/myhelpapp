@@ -11,8 +11,11 @@ class BusinessIndexItem extends React.Component {
                     <li className="index-item-box"> 
                         <div className= "index-big-box">
                             <div className="index-photo">
-                                <img src={photo_url} />
+                                <img className = "photo" src={photo_url} />
                             </div>
+                            {/* <div className="index-photo">
+                                <img src={photo_url[0]} />
+                            </div> */}
                             <div className="info-box">
                                 <div className="info-top-box">
                                     <div className="info-top-left">
@@ -25,21 +28,22 @@ class BusinessIndexItem extends React.Component {
                                                 src="https://i.imgur.com/UkZkm0D.png"
                                             ></img>
                                         </div> */}
-                                        <div className="price">Price:{price}</div>
+                                        <div className="price">{price}</div>
                                             <div>{category}</div>
                                             
                                         
                                     </div>
                                     <div className="info-item-box">
                                         <ul>
-                                            <li>
-                                                {city}
-                                            </li>
+                                            
                                             <li>
                                                 <i className="phone"></i> {phone_number}
                                             </li>
                                             <li>
                                                 <i className="street"></i> {street}
+                                            </li>
+                                            <li>
+                                                {city}
                                             </li>
                                             <li>
                                                 <i className="state"></i> {state}, <i className="zip"></i> {zip_code}

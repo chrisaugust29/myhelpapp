@@ -14,19 +14,26 @@ class BusinessShow extends React.Component {
 
     render() {
             let { business } = this.props
+             if (business === undefined) return (
+            <div>Please refresh business page</div>
+             )
             const {
                 name, category, street, city, state,
-                zip_code, webpage, phone_number, price
+                zip_code, webpage, phone_number, price, photo_url
             } = business;
             
             return (
                 <div>
                     <HeaderContainer />
                     <div className="show-box">
+                        <div className="index-photo">
+                            <img src={photo_url} />
+                        </div>
                         <div className="show-box2">
                             <div className="show-bname">
                                 <div>{name}</div>
                             </div>
+                            
                             {/* add stars image */}
                             <div className="stars">
                             </div>
