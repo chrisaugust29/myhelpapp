@@ -102,6 +102,9 @@ ActiveRecord::Base
     price: "$"
   )
 
+  a3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_3.jpg')
+  bis3.photos.attach(io: a3, filename: 'american_3.jpg')
+
    bis4 = Business.create!(
     name: "Original Joe's",
     creator_id: 4,
@@ -114,6 +117,8 @@ ActiveRecord::Base
     state: "CA",
     price: "$$$"
   )
+  a4 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_4.jpg')
+  bis4.photos.attach(io: a4, filename: 'american_4.jpg')
 
    bis5 = Business.create!(
     name: "Calibur",
@@ -127,6 +132,8 @@ ActiveRecord::Base
     state: "CA",
     price: "$"
   )
+  a5 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/american_5.jpg')
+  bis5.photos.attach(io: a5, filename: 'american_5.jpg')
 
    bis6 = Business.create!(
     name: "Ginto",
@@ -141,6 +148,9 @@ ActiveRecord::Base
     price: "$$"
   )
 
+  a6 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/japanese_6.jpg')
+  bis6.photos.attach(io: a6, filename: 'japanese_6.jpg')
+
    bis7 = Business.create!(
     name: "Akikos",
     creator_id: 4,
@@ -153,6 +163,9 @@ ActiveRecord::Base
     state: "CA",
     price: "$$$"
   )
+  a7 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/japanese_7.jpg')
+  bis7.photos.attach(io: a7, filename: 'japanese_7.jpg')
+
 
    bis8 = Business.create!(
     name: "Rintaro",
@@ -167,18 +180,8 @@ ActiveRecord::Base
     price: "$$$"
   )
 
-  bis8 = Business.create!(
-    name: "Rintaro",
-    creator_id: 4,
-    category: "Japanese",
-    street: "82 14th St",
-    city: "San Francisco",
-    zip_code: "94104",
-    webpage: "Rintaro.com",
-    phone_number: "415-323-4118",
-    state: "CA",
-    price: "$$$"
-  )
+  a8 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/japanese_8.jpg')
+  bis8.photos.attach(io: a8, filename: 'japanese_8.jpg')
 
    bis9 = Business.create!(
     name: "Grubbies",
@@ -193,6 +196,9 @@ ActiveRecord::Base
     price: "$$"
   )
 
+  a9 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/japanese_9.jpg')
+  bis9.photos.attach(io: a9, filename: 'japanese_9.jpg')
+
   bis10 = Business.create!(
     name: "Wako",
     creator_id: 4,
@@ -205,6 +211,8 @@ ActiveRecord::Base
     state: "CA",
     price: "$$$$"
   )
+    a10 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/japanese_10.jpg')
+    bis10.photos.attach(io: a10, filename: 'japanese_10.jpg')
 
    bis11 = Business.create!(
     name: "Top Hops",
@@ -218,6 +226,8 @@ ActiveRecord::Base
     state: "NY",
     price: "$$"
   )
+    a11 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_11.jpg')
+    bis11.photos.attach(io: a11, filename: 'bar_11.jpg')
 
    bis12 = Business.create!(
     name: "Arena SF",
@@ -231,6 +241,8 @@ ActiveRecord::Base
     state: "CA",
     price: "$$$$"
   )
+    a12 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_12.jpg')
+    bis12.photos.attach(io: a12, filename: 'bar_12.jpg')
 
   bis13 = Business.create!(
     name: "Del Mar",
@@ -244,6 +256,8 @@ ActiveRecord::Base
     state: "CA",
     price: "$$$"
   )
+  a13 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_13.jpg')
+  bis13.photos.attach(io: a13, filename: 'bar_13.jpg')
 
    bis14 = Business.create!(
     name: "Lusk",
@@ -258,6 +272,9 @@ ActiveRecord::Base
     price: "$$$"
   )
 
+    a14 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_14.jpg')
+    bis14.photos.attach(io: a14, filename: 'bar_14.jpg')
+
   bis15 = Business.create!(
     name: "Jaxson",
     creator_id: 4,
@@ -270,6 +287,10 @@ ActiveRecord::Base
     state: "CA",
     price: "$"
   )
+
+    a15 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/bar_15.jpg')
+    bis15.photos.attach(io: a15, filename: 'bar_15.jpg')
+
   bis16 = Business.create!(
    name: "Sweetgreen",
     creator_id: 4,
@@ -282,6 +303,8 @@ ActiveRecord::Base
     state: "CA",
     price: "$"
   )
+    a16 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_16.jpg')
+    bis16.photos.attach(io: a16, filename: 'healthy_16.jpg')
 
   bis17 = Business.create!(
    name: "Butter Lettuce",
@@ -295,6 +318,8 @@ ActiveRecord::Base
     state: "CA",
     price: "$$"
   )
+    a17 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_17.jpg')
+    bis17.photos.attach(io: a17, filename: 'healthy_17.jpg')
 
    bis18 = Business.create!(
     name: "Mixt",
@@ -308,6 +333,8 @@ ActiveRecord::Base
     state: "CA",
     price: "$"
   )
+    a18 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_18.jpg')
+    bis18.photos.attach(io: a18, filename: 'healthy_18.jpg')
 
     bis19 = Business.create!(
     name: "Greens Place",
@@ -321,6 +348,8 @@ ActiveRecord::Base
     state: "CA",
     price: "$$$"
   )
+    a19 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_19.jpg')
+    bis19.photos.attach(io: a19, filename: 'healthy_19.jpg')  
 
     bis20 = Business.create!(
     name: "Kitiva",
@@ -334,7 +363,8 @@ ActiveRecord::Base
     state: "CA",
     price: "$$$"
   )
-
+    a20 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_20.jpg')
+    bis20.photos.attach(io: a20, filename: 'healthy_20.jpg')  
 
   
 
