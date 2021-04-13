@@ -77,11 +77,11 @@ class Header extends React.Component {
             return (
                 <div id="logout" className="head-bar-right">
                     <Link to="/" className="head-to-home">
-                        Hello Helper!
+                       Hello Helper!
                  </Link>
-                    <button onClick={this.handleLogout} className="head-to-home">
+                    <Link to="/signup" onClick={this.props.errorClear} className="head-to-home">
                         Sign Out
-                    </button>
+                    </Link>
                 </div>
             )
         } else {

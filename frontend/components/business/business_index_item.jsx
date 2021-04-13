@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 class BusinessIndexItem extends React.Component {
     render() {
         let { id, name, category, street, city, zip_code, state,
-             phone_number, rating, price, photo_url } = this.props.business;
+             phone_number, rating, price, photoUrls } = this.props.business;
         return (
             <div>
                 <Link to={`/businesses/${id}`}>
                     <li className="index-item-box"> 
                         <div className= "index-big-box">
                             <div className="index-photo">
-                                <img className = "photo" src={photo_url} />
+                                <img className = "photo" src={photoUrls} />
                             </div>
                             {/* <div className="index-photo">
                                 <img src={photo_url[0]} />

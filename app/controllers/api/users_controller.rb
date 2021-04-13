@@ -13,7 +13,7 @@ class Api::UsersController < ApplicationController
 
   def index 
     @users = User.all
-    redner :index
+    render :index
   end
 
   def show

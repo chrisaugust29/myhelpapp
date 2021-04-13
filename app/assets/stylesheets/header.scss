@@ -29,26 +29,30 @@
 // headbar
 
 .head-bar-right {
-    width: 275px;
+    display: flex;
+    width: 175px;
+    padding-right: 40px;
     height: 28px;
     font-weight: 700;
     color: white;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .head-to-home {
-    padding-right: 15px;
-    margin-top: 8px;
-    border-bottom: 2px solid transparent;
-    font-size: 14px;
-    justify-content: space-around;
+    display: flex;
+    width: 150px;
+    padding-right: 40px;
+    height: 28px;
+    font-weight: 700;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
     cursor: pointer;
 }
-#logout{
-    display: flex;
-    flex-direction: row-reverse;
-}
+
+
 
 // categories
 .busi-categories{

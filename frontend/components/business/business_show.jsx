@@ -9,24 +9,28 @@ class BusinessShow extends React.Component {
 
     componentDidMount() {
         this.props.fetchBusiness(this.props.match.params.id);
-        this.props.fetchUsers();
     }
 
+    componentDidUpdate(prevProps) {
+        if (prevProps.match.params.id !== this.props.match.params.id) {
+            this.props.fetchBusiness(this.props.match.params.id)
+        }
+    }
     render() {
-            let { business } = this.props
-             if (business === undefined) return (
+        let { business } = this.props
+            if (business === undefined) return (
             <div>Please refresh business page</div>
              )
             const {
                 name, category, street, city, state,
-                zip_code, webpage, phone_number, price, photo_url
+                zip_code, webpage, phone_number, price, photoUrls
             } = business;
             
             return (
                 <div>
                     <HeaderContainer />
                     <div className="show-box">
-                        {photo_url.map((photo, idx) => (
+                        {photoUrls.map((photo, idx) => (
                             <div key={idx} className="imgs-items">
                                 <img src={photo} className="show-img" />
                             </div>
