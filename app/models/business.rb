@@ -7,6 +7,10 @@ class Business < ApplicationRecord
     belongs_to :creator,
     foreign_key: :creator_id,
     class_name: "User"
+
+    has_many :reviews,
+    foreign_key: :business_id,
+    class_name: "Review"
     
     has_many_attached :photos
 

@@ -12,6 +12,7 @@ import AmericanIndex from './business/categories/american_index'
 import JapaneseIndex from './business/categories/japanese_index'
 import HealthyIndex from './business/categories/healthy_index'
 import BarsIndex from './business/categories/bars_index'
+import ReviewFormContainer from "./reviews/review_form_container";
 
 const App = () => (
     <div>
@@ -25,6 +26,7 @@ const App = () => (
         <Route exact path="/businesses/japanese" component={JapaneseIndex} />
         <Route exact path="/businesses/healthy" component={HealthyIndex} />
         <Route exact path="/businesses/bars" component={BarsIndex} />
+        <Route exact path='/businesses/:id/newreview' component={ReviewFormContainer} />
         <Route render={() => <Redirect to={{ pathname: "/" }} />} />
     </Switch>
     </div>

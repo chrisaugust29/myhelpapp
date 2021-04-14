@@ -11,6 +11,10 @@ class User < ApplicationRecord
     foreign_key: :creator_id,
     class_name: "Business"
 
+    has_many :reviews,
+    foreign_key: :author_id,
+    class_name: "Review"
+
 
     #ripes
     def reset_session_token!
