@@ -1,1 +1,62 @@
-.
+.form-box {
+
+    max-width: 700px;
+    margin: auto;
+
+}
+
+.ftitle{
+    font-size: 40px;
+    font: bold;
+    font-weight: 200;
+    padding: 10px 20px 10px 0px;
+    margin-top: 20px;
+    height: 50px;
+    color: #314f8a;
+}
+
+.finfo-box{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    max-width: 800px;
+    cursor: text;
+}
+.rating-text{
+    color: #a70b16;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+.rform{
+    width: 100%;
+    font-size: 20px;
+    resize: none;
+    font-weight: 100;
+}
+
+.rtext{
+    width: 100%;
+    font-size: 20px;
+    resize: none;
+    font-weight: 100;
+}
+.rbody{
+    width: 100%;
+    font-size: 21px;
+    resize: none;
+    font-weight: 100;
+}
+
+.submit-review{
+    font-size: 16px;
+    min-width: 200px;
+    margin: 20px;
+    font-weight: 700;
+    color: #fff;
+    background: #c60e1b;
+    border: 1px solid #c60e1b;
+    border-radius: 5px;
+    cursor: pointer;
+}

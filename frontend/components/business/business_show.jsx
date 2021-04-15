@@ -71,23 +71,45 @@ class BusinessShow extends React.Component {
                             <div className="mid-header">
                                 Hours Open
                             </div>  
-                                <div className="business-show-hours">
-                                    <div><p id="week">Mon</p><p>8:30am - 5:30pm</p></div>
-                                    <div><p id="week">Tue</p><p>8:30am - 5:30pm</p></div>
-                                    <div><p id="week">Wed</p><p>8:30am - 5:30pm</p></div>
-                                    <div><p id="week">Thu</p><p>8:30am - 5:30pm</p></div>
-                                    <div><p id="week">Fri</p><p>8:30am - 5:30pm</p></div>
-                                    <div><p id="week">Sat</p><p>10:30am - 7:30pm</p></div>
-                                    <div><p id="week">Sun</p><p>10:30am - 7:30pm</p></div>
-                                </div>
+                                <ul className="business-show-hours">
+                                    <li className="week-items">
+                                        <div className ="day">Mon</div>
+                                        <div className="time">8:30 AM - 5:30 PM</div>
+                                    </li>
+                                    <li className="week-items">
+                                        <div className="day">Tues</div>
+                                        <div className="time">8:30 AM - 5:30 PM</div>
+                                    </li>
+                                    <li className="week-items">
+                                        <div className="day">Wed</div>
+                                        <div className="time">8:30 AM - 5:30 PM</div>
+                                    </li>
+                                    <li className="week-items">
+                                        <div className="day">Thurs</div>
+                                        <div className="time">8:30 AM - 5:30 PM</div>
+                                    </li>
+                                    <li className="week-items">
+                                        <div className="day">Fri</div>
+                                        <div className="time">8:30 AM - 9:30 PM</div>
+                                    </li>
+                                    <li className="week-items">
+                                        <div className="day">Sat</div>
+                                        <div className="time">8:30 AM - 9:30 PM</div>
+                                    </li>
+                                    <li className="week-items">
+                                        <div className="day">Sun</div>
+                                        <div className="time">8:30 AM - 9:30 PM</div>
+                                    </li>
+                                        
+                                </ul>
                           
                         </div>
-                      
-                        <div className="rev-index-box">
-                            
-                            <ReviewIndexContainer users={this.props.users} reviews={reviews} />
-                        </div>
-                    
+                        <div className = "rev-container">
+                            <div class="bis-reviews">Helper's Reviews</div>      
+                            <div className="rev-index-box">
+                                <ReviewIndexContainer users={this.props.users} reviews={reviews} />
+                            </div>
+                        </div>           
                 </div>
             
             )};

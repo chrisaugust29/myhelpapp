@@ -69,8 +69,8 @@ class ReviewIndexItem extends React.Component {
             <div>
                 <div className='rev-box'>
                     <div className='rev-author'>
-                        <div className='author-name'>{first_name}&nbsp;{last_name}
-                            <div className='time-stamp'>{dates} </div>
+                        <div className='author-name'>
+                            {first_name}&nbsp;{last_name}
                             <div className='review-item-rating'>
                                 <div className="review-stars">
                                     <p className="rating">
@@ -79,6 +79,7 @@ class ReviewIndexItem extends React.Component {
                                         <i className="fas fa-star"></i>
                                         <i className="fas fa-star"></i>
                                     </p>
+                                    <div className='time-stamp'>{dates} </div>
                                 </div>
                             </div>
                         </div>

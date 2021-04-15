@@ -36,7 +36,7 @@
 }
 .show-top-info p:first-child{
      font-weight: 650;
-    font-size: 35px;
+    font-size: 40px;
     line-height: 36px;
     color: #122477;
 }
@@ -85,7 +85,7 @@
     font-weight: 500;
     font-size: 15px;
     color: #252525;
-    padding-left: 18px;
+    padding-left: -5px;
     padding-top: 16px;
     padding-bottom: 16px;
 }
@@ -93,28 +93,71 @@
 
 .mid-header{
     display: block;
-    width: 600px;
-    border-top: 1px solid red;
+    width: 800px;
     margin-top: 60px;
     padding-top: 20px;
     padding-bottom: 20px;
-
+    
     border-top: 1px solid rgba(0, 0, 0, 0.2);
 
     
     font-weight: 700;
-    font-size: 20px;
-    color: #2b273c;
+    font-size: 30px;
+    color: #122477;
 
 }
 .business-show-hours{
     
-    margin-bottom: 5px;
+    padding: 0px;
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+    padding-top: .5rem;
+    margin-bottom: 3rem;
 }
 
-.week{
-    font-weight: 700;
-    padding-right: 10px;
-    font-weight: bold;
-    min-width: 100px;
+
+.week-items{
+    display: flex;
+    margin-bottom: 2.5px;
+    font-size: 25px;
+    color: #1b1b1b;
 }
+
+.day{
+    padding-right: 8px;
+    font-weight: bold;
+    min-width: 125px;
+}
+
+.time{
+    margin-left: 38px;
+    font-weight: 300;
+}
+
+// reviews
+.rev-container {
+    display: block;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: fit-content;
+    padding-top: 0px;  
+}
+
+.bis-reviews{
+    display: block;
+    width: 800px;
+    margin-top: 25px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #122477;
+}
+    .rev-index-box{
+    
+    display: block;
+    }

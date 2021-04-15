@@ -16,9 +16,9 @@ class ReviewForm extends React.Component {
         this.submitR = this.submitR.bind(this);
     }
 
-    // componentDidMount() {
-    //     this.props.fetchBusiness(this.props.match.params.id)
-    // };
+    componentDidMount() {
+        this.props.fetchBusiness(this.props.match.params.id)
+    };
 
     loginMust() {
         alert('Log In User before submitting Review')
@@ -36,11 +36,12 @@ class ReviewForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-       
-
+       if(this.props.currentUser){
         this.props.createReview(this.state)
         this.submitR()
-       
+       }else{
+           this.loginMust()
+       }
     }
 
     renderErrors() {
@@ -56,19 +57,19 @@ class ReviewForm extends React.Component {
     }
 
     render() {
-    
+        console.log("this",this.props)
+        if (this.props.business === undefined) { return null 
+        }else{
         return (
             <div>
                 <HeaderContainer />
                 <div className='form-box'>
-                    <div className='ftitle'>Write a Helper Review!</div>
+                    <div className='ftitle'>Write a Review for {this.props.business.name}!</div>
                     <div className='finfo-box'>
                         <form className='rform' onSubmit={this.handleSubmit}>
-                            <div className='form-wrapper'>
-                                <div className='form-rating-box'>
                                     <div className='rating-text'>Please select below a rating from 1 through 5! </div>
                                     <input type="number" value={this.state.rating} className="far fa-star" min="1" max="5" onChange={this.update("rating")} />                              
-                                </div>
+                                
                                 <div className='rbody'>
                                     <textarea className='rtext' rows='15' cols='40'
                                         value={this.state.body}
@@ -76,7 +77,6 @@ class ReviewForm extends React.Component {
                                         placeholder='Please leave a review of your experience!'
                                     />
                                 </div>
-                            </div>
                             <div className='submit-button-box'>
                                 <div className='rform-button'>
                                     <button className = 'submit-review'>Submit Review</button>
@@ -86,7 +86,7 @@ class ReviewForm extends React.Component {
                     </div>
                 </div>
             </div>
-        )
+        )}
         
     }
 }

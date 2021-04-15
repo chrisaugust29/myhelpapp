@@ -5,13 +5,14 @@ import { fetchBusiness } from "../../actions/business_actions"
 
 const mapStateToProps = (state, ownProps) => ({   
         currentUser: state.session.id,
+        business: state.entities.businesses[ownProps.match.params.id]
         
     })
 
 const mapDispatchToProps = dispatch => ({
     action: review => dispatch(createReview(review)),
     createReview: review => dispatch(createReview(review)),
-    // fetchBusiness: id => dispatch(fetchBusiness) 
+    fetchBusiness: id => dispatch(fetchBusiness(id)) 
 
 });
 
