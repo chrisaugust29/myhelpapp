@@ -11,7 +11,7 @@
     width: 800px;
 }
 .rev-author{
-    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -22,6 +22,7 @@
 .time-stamp{
     font-weight:lighter;
     font-size: 12px;
+    text-align: end;
     
 }
 .review-stars{
@@ -34,4 +35,26 @@
     font-size: 15px;
     width: 650px;
     line-height: 22px; 
+}
+
+.review-btn-box{
+    text-align: end;
+    padding-top: 25px;
+}
+
+.del-btn{
+    text-align: end;
+    background-color: #fff;
+    color: gray;
+    transition-delay: .2s;
+    font-weight: bold;
+    padding-right: 25px;
+    cursor: pointer;
+    
+}
+
+.rev-btn-place{
+    padding-right: 24px;
+    font-size: 30px;
+    font-weight: bold;
 }

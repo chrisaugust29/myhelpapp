@@ -20,7 +20,7 @@ class BusinessShow extends React.Component {
         }
     }
     render() {
-
+       
         let { business, reviews } = this.props
             if ((business === undefined) || (reviews === undefined)){
                 return null
@@ -105,7 +105,7 @@ class BusinessShow extends React.Component {
                           
                         </div>
                         <div className = "rev-container">
-                            <div class="bis-reviews">Helper's Reviews</div>      
+                            <div className="bis-reviews">Helper's Reviews</div>      
                             <div className="rev-index-box">
                                 <ReviewIndexContainer users={this.props.users} reviews={reviews} />
                             </div>

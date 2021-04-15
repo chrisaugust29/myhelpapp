@@ -9,7 +9,7 @@ class BusinessIndexItem extends React.Component {
             <div>
                 <Link to={`/businesses/${id}`}>
                     <li className="index-item-box"> 
-                        <div className= "index-big-box">
+                        <div className="index-big-box">
                             <div className="index-photo">
                                 <img className = "photo" src={photoUrls} />
                             </div>
