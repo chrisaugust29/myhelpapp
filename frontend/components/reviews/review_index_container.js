@@ -1,15 +1,15 @@
 import React from 'react';
 import { deleteReview } from '../../actions/review_actions';
-import { fetchUsers } from '../../actions/user_actions';
-import ReviewIndex from './review_list_item';
+import ReviewIndex from './review_index';
 import { connect } from 'react-redux';
 import { editReview } from '../../actions/review_actions'
-import { fetchReviews } from '../../util/review_api_util';
+import { fetchReviews } from '../../actions/review_actions';
 
-const mapStateToProps= (state) => {
+const mapStateToProps= (state,ownProps) => {
     return ({
         currentUser: state.session.id,
-        ownProps
+        ownProps,
+        reviews: Object.values(state.entities.reviews)
     })
 }
 

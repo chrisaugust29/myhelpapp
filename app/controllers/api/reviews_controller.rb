@@ -1,9 +1,10 @@
 class Api::ReviewsController < ApplicationController
-    skip_before_action :verify_authenticity_token
-    before_action :require_signed_in!
+    # skip_before_action :verify_authenticity_token
+    
 
     def index
-        @reviews =Review.all
+        @reviews = Review.all
+        
     end
 
     def create  
@@ -13,7 +14,7 @@ class Api::ReviewsController < ApplicationController
         if @review.save
         render :show
         else
-        render json: @review, status: 422
+        render json: @review.errors.full_messages, status: 422
         end
     end
 
@@ -41,7 +42,7 @@ class Api::ReviewsController < ApplicationController
 
     private
     def review_params
-        params.require(:review).permit(:body, :rating, :business_id)
+        params.require(:review).permit(:body, :rating, :business_id, :author_id)
     end
 
 end

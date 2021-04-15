@@ -3,6 +3,7 @@ import HeaderContainer from '../header/header_container'
 import { Link, Redirect, withRouter } from 'react-router-dom';
 
 class ReviewForm extends React.Component {
+    
     constructor(props) {
         super(props);
         this.state = {
@@ -15,9 +16,9 @@ class ReviewForm extends React.Component {
         this.submitR = this.submitR.bind(this);
     }
 
-    componentDidMount() {
-        this.props.fetchBusiness(this.props.match.params.id)
-    };
+    // componentDidMount() {
+    //     this.props.fetchBusiness(this.props.match.params.id)
+    // };
 
     loginMust() {
         alert('Log In User before submitting Review')
@@ -27,20 +28,19 @@ class ReviewForm extends React.Component {
         this.props.history.push(`/businesses/${this.props.match.params.id}`);
     }
 
-    update(field) {
+    update(f) {
         return e => this.setState({
-            [field]: e.target.value
+            [f]: e.target.value
         });
     }
 
     handleSubmit(e) {
-        e.preventDefault;
-        if (this.props.currentUser) {
-            this.props.action(this.state)
-                .then(this.submitR())
-        } else {
-            this.loginMust()
-        }
+        e.preventDefault();
+       
+
+        this.props.createReview(this.state)
+        this.submitR()
+       
     }
 
     renderErrors() {
@@ -56,17 +56,18 @@ class ReviewForm extends React.Component {
     }
 
     render() {
+    
         return (
             <div>
                 <HeaderContainer />
                 <div className='form-box'>
-                    <div className='ftitle'>{this.props.formType}</div>
+                    <div className='ftitle'>Write a Helper Review!</div>
                     <div className='finfo-box'>
                         <form className='rform' onSubmit={this.handleSubmit}>
                             <div className='form-wrapper'>
                                 <div className='form-rating-box'>
-                                    <input type="number" value={this.state.rating} className="rating" min="1" max="5" onChange={this.update("rating")} />
-                                    <div className='rating-text'>Select personal rating</div>
+                                    <div className='rating-text'>Please select below a rating from 1 through 5! </div>
+                                    <input type="number" value={this.state.rating} className="far fa-star" min="1" max="5" onChange={this.update("rating")} />                              
                                 </div>
                                 <div className='rbody'>
                                     <textarea className='rtext' rows='15' cols='40'
@@ -78,7 +79,7 @@ class ReviewForm extends React.Component {
                             </div>
                             <div className='submit-button-box'>
                                 <div className='rform-button'>
-                                    <input type="submit" value={this.props.formType} />
+                                    <button className = 'submit-review'>Submit Review</button>
                                 </div>
                             </div>
                         </form>

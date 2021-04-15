@@ -22,12 +22,6 @@ class BusinessIndexItem extends React.Component {
                                         <div className="item-name">
                                             {name}
                                         </div>
-                                        {/* <div className='review-stars'>
-                                            <img
-                                                className={`star-mid-${ItemRating}` + ` star-mid`}
-                                                src="https://i.imgur.com/UkZkm0D.png"
-                                            ></img>
-                                        </div> */}
                                         <div>{category}</div>
                                         <div className="price">{price}</div>
                                             
@@ -53,12 +47,6 @@ class BusinessIndexItem extends React.Component {
                                         </ul>
                                     </div>
                                 </div>
-
-                                {/* <div className='review-button-box'>
-                                    <Link to={`/businesses/${id}/newRev`}>
-                                        <button className="review-button"> Leave a Review</button>
-                                    </Link>
-                                </div> */}
                             </div>
                             
                         </div>

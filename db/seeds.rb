@@ -499,5 +499,35 @@ ActiveRecord::Base
     a16_3 = URI.open('https://helpapp-img.s3-us-west-1.amazonaws.com/healthy_1_3.jpeg')
     bis20.photos.attach(io: a16_3, filename: 'healthy_1_3.jpg')
   
+    # reviews 
+Review.create!(
+  body: "I loved the food here amazing",
+  rating: 4,
+  business_id: bis1.id,
+  author_id: demo.id,
+)
+Review.create!(
+  body: "awesome",
+  rating: 4,
+  business_id: bis1.id,
+  author_id: user2.id,
+)
+Review.create!(
+  body: "My job is yelping i think food is good here.",
+  rating: 3,
+  business_id: bis1.id,
+  author_id: user1.id,
+)
+Review.create!(
+  body: "This is a great new restaurant. ",
+  rating: 3,
+  business_id: bis2.id,
+  author_id: demo.id,
+)
 
-  
+Review.create!(
+  body: "it was OK",
+  rating: 4,
+  business_id: bis1.id,
+  author_id: user3.id,
+)
