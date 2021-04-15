@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import BusinessIndexItem from "./business_index_item";
 import HeaderContainer from '../header/header_container'
+import Footer from '../footer/footer'
 
 class BusinessIndex extends React.Component {
     constructor(props) {

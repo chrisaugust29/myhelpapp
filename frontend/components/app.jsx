@@ -13,6 +13,7 @@ import JapaneseIndex from './business/categories/japanese_index'
 import HealthyIndex from './business/categories/healthy_index'
 import BarsIndex from './business/categories/bars_index'
 import ReviewFormContainer from "./reviews/review_form_container";
+import Footer from './footer/footer'
 
 const App = () => (
     <div>
@@ -29,7 +30,9 @@ const App = () => (
         <Route exact path='/businesses/:id/newreview' component={ReviewFormContainer} />
         <Route render={() => <Redirect to={{ pathname: "/" }} />} />
     </Switch>
+    <Footer />
     </div>
+    
 );
 
 export default App;

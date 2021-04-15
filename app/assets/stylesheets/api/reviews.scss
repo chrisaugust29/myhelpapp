@@ -10,6 +10,14 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     width: 800px;
 }
+.photo-box{
+     margin: 5px;
+}
+.face-photo{
+    height: 70px;
+    width: 70px;
+}
+
 .rev-author{
     flex-direction: column;
     justify-content: space-between;
@@ -25,9 +33,7 @@
     text-align: end;
     
 }
-.review-stars{
 
-}
 .rev-body{
     margin-top: 10px;
     margin-bottom: 10px;

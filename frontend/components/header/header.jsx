@@ -79,7 +79,7 @@ class Header extends React.Component {
                     <Link to="/" className="head-to-home">
                        Hello Helper!
                  </Link>
-                    <Link to="/signup" onClick={this.props.errorClear} className="head-to-home">
+                    <Link to="/signup" onClick={this.props.errorClear, this.props.logout} className="head-to-home">
                         Sign Out
                     </Link>
                 </div>

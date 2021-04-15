@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Footer from '../footer/footer';
 
 class Home extends React.Component {
     constructor(props) {
@@ -58,18 +59,6 @@ class Home extends React.Component {
                                         <div className="splash-to-busi">
                                             <Link to="/businesses">Write a Review</Link>
                                         </div>
-                                        {/* <a
-                                            href="https://github.com/chrisaugust29"
-                                            target="_blank"
-                                            className="splash-links">
-                                            GitHub
-                                        </a>
-                                        <a
-                                            href="https://www.https://www.linkedin.com/in/christopher-low-99a557a3/"
-                                            target="_blank"
-                                            className="splash-links">
-                                            LinkedIn
-                                        </a> */}
                                     </div>
                                     <div className="splash-parent">{this.renderNavbar()}</div>
                                 </div>

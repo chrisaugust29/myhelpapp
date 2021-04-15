@@ -1,0 +1,33 @@
+.footer-container{
+    background-color: #fff;
+    text-align: center;
+}
+.footer{
+    display: flex;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-top: 1px solid rgba(204, 204, 204, 0.986);
+}
+
+.footer-img{
+    border-top: 1px solid lightgray;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 0%;
+    object-fit: center;
+
+}
+.github{
+    font-size: 40px;
+    color: #d32323;
+    padding-right: 30px;
+}
+.linkedin{
+    font-size: 40px;
+    color: #d32323;
+    padding-right: 30px;
+}

@@ -39,6 +39,10 @@ class ReviewIndexItem extends React.Component {
             <div>
                 <div className='rev-box'>
                     <div className='rev-author'>
+                        <div className='photo-box'>
+                            <img className='face-photo'
+                                src={window.face} />
+                        
                         <div className='author-name'>
                             {first_name}&nbsp;{last_name}
                             <div className='review-item-rating'>
@@ -53,6 +57,7 @@ class ReviewIndexItem extends React.Component {
                                  </div>
                             </div>
                             </div>
+                        </div>
                     </div>
                     <div className='rev-body'>
                         <p>{this.props.review.body}</p>
