@@ -35,3 +35,10 @@ Help's business page displays information on all businesses including title of b
 **Reviews**
 
 Users are allowed to write a review and give a rating to specific businesses only if they are logged in to an account. Users will be prompted with an error message if they attempt to submit a review if they are not logged in to Help. 
+
+
+# Future Design Implementation 
+
+* Search function for users to index specific businesses based on name or location 
+* Google API that displays locations from user to business 
+* Allows users to create and input their very own businesses 
