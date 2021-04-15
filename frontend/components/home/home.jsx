@@ -52,47 +52,44 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                    <div className="splash">
-                        <div className="splash-main">
-                            <div className="splash-nav1">
-                                 <div className="splash-bar-left">
-                                        <div className="splash-to-busi">
-                                            <Link to="/businesses">Write a Review</Link>
-                                        </div>
-                                    </div>
-                                    <div className="splash-parent">{this.renderNavbar()}</div>
+                <div className="splash-main">
+                        <div className="splash-nav1">
+                            <div className="splash-bar-left">
+                                <div className="splash-to-busi">
+                                    <Link to="/businesses">Write a Review</Link>
                                 </div>
-
-                            <div className="inner">
-                                <Link to="/" className="logo-link">
-                                    <img className="logo1" src={window.logo} />
-                                </Link>
                             </div>
+                            <div className="splash-parent">{this.renderNavbar()}</div>
                         </div>
+
+                    <div className="inner">
+                        <Link to="/" className="logo-link">
+                            <img className="logo1" src={window.logo} />
+                        </Link>
                     </div>
-                    {/* picture/items */}
-                    <div className="splash-itembox-wrap">
-                        <div className="splash-box-name">Help's Best Businesses Near You</div>
-                        <div className="splash-item-box">
-                            <Link to="/businesses" className="splashcategory">
-                                <div className="all-categories-pic" />
-                                <div className="all-category-words">Help's Businesses</div>
-                            </Link>
-                            <Link to="/businesses/american" className="splashcategory">
-                                <div className="american-pic" />
-                                <div className="american-words">American</div>
-                            </Link>
-                            <Link to="/businesses/japanese" className="splashcategory">
-                                <div className="japan-pic" />
-                                <div className="japan-words">Japanese</div>
-                            </Link>
-                            <Link to="/businesses/bars" className="splashcategory">
-                                <div className="bar-pic" />
-                                <div className="bar-words">Bars</div>
-                            </Link>
-                        </div>
-                    </div> 
-            </div>
+                </div>
+            <div className="splash-itembox-wrap">
+                <div className="splash-box-name">Help's Best Businesses Near You</div>
+                <div className="splash-item-box">
+                    <Link to="/businesses" className="splashcategory">
+                        <div className="all-categories-pic" />
+                        <div className="all-category-words">Help's Businesses</div>
+                    </Link>
+                    <Link to="/businesses/american" className="splashcategory">
+                        <div className="american-pic" />
+                        <div className="american-words">American</div>
+                    </Link>
+                    <Link to="/businesses/japanese" className="splashcategory">
+                        <div className="japan-pic" />
+                        <div className="japan-words">Japanese</div>
+                    </Link>
+                    <Link to="/businesses/bars" className="splashcategory">
+                        <div className="bar-pic" />
+                        <div className="bar-words">Bars</div>
+                    </Link>
+                </div>
+            </div> 
+    </div>
         );
     }
 }
