@@ -30,6 +30,26 @@ class ReviewIndexItem extends React.Component {
             )
     }
 
+    // editButton(){
+    //     return(
+    //         <Link to={`/review/drink/${this.props.drinkId}/edit/${this.props.review._id}`}>
+    //             Edit
+    //         </Link>
+    //     )
+    // }
+
+    updateButton() {
+        if (this.props.currentUser === this.props.author.id)
+            return (
+                <div className='rev-btn-place'>
+                    <i className='fas fa-trash'
+                        onClick={this.handleDelete()}>
+                        
+                    </i>
+                </div>
+            )
+    }
+
     render() {
        
         let dates = this.props.review.created_at
@@ -63,6 +83,7 @@ class ReviewIndexItem extends React.Component {
                         <p>{this.props.review.body}</p>
                     </div>
                     <div className="del-btn">{this.deleteButton()}</div>
+                    {/* <div className="edit-btn">{this.editButton()}</div> */}
                     <div className='time-stamp'>{dates} </div>
                     
                 </div>

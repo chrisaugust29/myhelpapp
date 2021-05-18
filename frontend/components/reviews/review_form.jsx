@@ -57,7 +57,6 @@ class ReviewForm extends React.Component {
     }
 
     render() {
-        console.log("this",this.props)
         if (this.props.business === undefined) { return null 
         }else{
         return (

@@ -13,6 +13,7 @@ import JapaneseIndex from './business/categories/japanese_index'
 import HealthyIndex from './business/categories/healthy_index'
 import BarsIndex from './business/categories/bars_index'
 import ReviewFormContainer from "./reviews/review_form_container";
+import EditReviewFormContainer from "./reviews/edit_review_form_container";
 import Footer from './footer/footer'
 
 const App = () => (
@@ -28,6 +29,7 @@ const App = () => (
         <Route exact path="/businesses/healthy" component={HealthyIndex} />
         <Route exact path="/businesses/bars" component={BarsIndex} />
         <Route exact path='/businesses/:id/newreview' component={ReviewFormContainer} />
+        <Route exact path="/businesses/:id/newreview/:reviewId" component={EditReviewFormContainer}/>
         <Route render={() => <Redirect to={{ pathname: "/" }} />} />
     </Switch>
     <Footer />
