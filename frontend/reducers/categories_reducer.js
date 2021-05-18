@@ -11,7 +11,7 @@ export const Japanese = (state) =>
 
 export const Bars = (state) =>
     Object.values(state.entities.businesses).filter(
-        (business) => business.category === "Bars"
+        (business) => business.category === "Bar"
     );
 
 export const Healthy = (state) =>

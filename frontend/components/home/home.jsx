@@ -83,7 +83,7 @@ class Home extends React.Component {
                         <div className="japan-pic" />
                         <div className="japan-words">Japanese</div>
                     </Link>
-                    <Link to="/businesses/Bars" className="splashcategory">
+                    <Link to="/businesses/Bar" className="splashcategory">
                         <div className="bar-pic" />
                         <div className="bar-words">Bars</div>
                     </Link>
