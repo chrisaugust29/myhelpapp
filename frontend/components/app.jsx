@@ -23,11 +23,12 @@ const App = () => (
         <AuthRoute exact path="/login" component={LoginFormContainer} />
         <Route exact path="/" component={HomeContainer} />
         <Route exact path="/businesses" component={BusinessIndexContainer} />
+        
+        <Route exact path="/businesses/American" component={AmericanIndex} />
+        <Route exact path="/businesses/Japanese" component={JapaneseIndex} />
+        <Route exact path="/businesses/Healthy" component={HealthyIndex} />
+        <Route exact path="/businesses/Bars" component={BarsIndex} />
         <Route exact path="/businesses/:id" component={BusinessShowContainer} />
-        <Route exact path="/businesses/american" component={AmericanIndex} />
-        <Route exact path="/businesses/japanese" component={JapaneseIndex} />
-        <Route exact path="/businesses/healthy" component={HealthyIndex} />
-        <Route exact path="/businesses/bars" component={BarsIndex} />
         <Route exact path='/businesses/:id/newreview' component={ReviewFormContainer} />
         <Route exact path="/businesses/:id/newreview/:reviewId" component={EditReviewFormContainer}/>
         <Route render={() => <Redirect to={{ pathname: "/" }} />} />

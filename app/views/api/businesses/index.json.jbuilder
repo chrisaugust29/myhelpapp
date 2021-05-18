@@ -1,4 +1,5 @@
 @businesses.each do |business|
+
   json.set! business.id do
     # json.partial! "api/businesses/business", business: business
     json.extract! business, :id, 
@@ -20,4 +21,5 @@
     #     json.photo_url ''
     #   end
   end
+ 
 end

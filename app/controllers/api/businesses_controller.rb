@@ -18,8 +18,15 @@ class Api::BusinessesController < ApplicationController
     end
 
     def show 
-        @business = Business.find(params[:id])
-        render "api/businesses/show"
+        if params[:id].is_a?(Integer)
+            @business = Business.find(params[:id])
+            render "api/businesses/show"
+        # else @business = Business.find_by(category: params[:id])
+        else
+            @businesses = Business.where("category LIKE ?","#{params[:id]}")
+            render "api/businesses/index"
+        end
+            
         
     end
 

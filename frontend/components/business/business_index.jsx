@@ -10,6 +10,7 @@ class BusinessIndex extends React.Component {
     }
 
     componentDidMount() {
+        // debugger
         this.props.fetchBusinesses();
     }
     render() {

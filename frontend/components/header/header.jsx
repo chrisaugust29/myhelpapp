@@ -43,25 +43,25 @@ class Header extends React.Component {
                         </div>
 
                         <div className="nav-bar-category-item">
-                            <Link to="/businesses/bbq">
-                                <i className="bar"></i> Bar{" "}
+                            <Link to="/businesses/Bars">
+                                <i className="bar"></i> Bars{" "}
                                 <i className="down-arrow"></i>
                             </Link>
                         </div>
                         <div className="nav-bar-category-item">
-                            <Link to="/businesses/sushi">
+                            <Link to="/businesses/American">
                                 <i className="fast-food"></i> Fast Food{" "}
                                 <i className="down-arrow"></i>
                             </Link>
                         </div>
                         <div className="nav-bar-category-item">
-                            <Link to="/businesses/bar">
+                            <Link to="/businesses/Japanese">
                                 <i className="japanese"></i> Japanese{" "}
                                 <i className="down-arrow"></i>
                             </Link>
                         </div>
                         <div className="nav-bar-category-item">
-                            <Link to="/businesses/chinesefood">
+                            <Link to="/businesses/Healthy">
                                 <i className="healthy"></i> Healthy{" "}
                                 <i className="down-arrow"></i>
                             </Link>
