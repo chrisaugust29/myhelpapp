@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
-// import Search from '../search/search'
+import Search from '../search/search'
 
 class Header extends React.Component {
     constructor(props) {
@@ -24,7 +24,7 @@ class Header extends React.Component {
                             </Link>
                         </div>
                         <div className="business-nav-search">
-                            <p>Search bar should be here</p>
+                            <Search/>
                         </div>
                         {this.renderHeadBar()}
                     </div>

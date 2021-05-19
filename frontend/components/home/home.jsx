@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Footer from '../footer/footer';
+import Search from '../search/search';
 
 class Home extends React.Component {
     constructor(props) {
@@ -66,6 +67,10 @@ class Home extends React.Component {
                         <Link to="/" className="logo-link">
                             <img className="logo1" src={window.logo} />
                         </Link>
+                       
+                    </div>
+                    <div className="home-search-bar">
+                     <div className="homesearch"><Search/></div>
                     </div>
                 </div>
             <div className="splash-itembox-wrap">
