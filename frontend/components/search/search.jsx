@@ -30,23 +30,23 @@ class Search extends React.Component{
         return(
             <div className="homes-bar">
                 <div className="home-flex">
-                    <div className="home-title">Categories</div>
+                    <div className="home-title">Find</div>
                     <input
                         value={this.state.category}
                         className="business-s"
                         type="text"
-                        placeholder="American, Bars, Healthy, Japanese"
+                        placeholder="American, Bars, Healthy, Japanese..."
                         onChange = {this.update('category')}
                     />
                 </div>
                 <div className="s-flex">
                     <div className="s-flex-input">
-                        <div className="s-flex-n">City</div>
+                        <div className="s-flex-n">Near</div>
                         <input
                             value= {this.state.city}
                             className="busi-s"
                             type="text"
-                            placeholder="San Francisco"
+                            placeholder="San Francisco ONLY FOR NOW"
                             onChange = {this.update('city')}
                         />
                     </div>
