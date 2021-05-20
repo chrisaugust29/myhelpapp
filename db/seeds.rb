@@ -66,6 +66,8 @@ ActiveRecord::Base
     zip_code: "94104",
     webpage: "www.flameburgers.com",
     phone_number: "415-584-3058",
+    lat: '37.71781',
+    lng: '-122.47386',
     state: "CA",
     price: "$$"
   )
@@ -90,6 +92,8 @@ ActiveRecord::Base
     zip_code: "89109",
     webpage: "japwww.caesars.com/",
     phone_number: "702-731-7373",
+    lat: '39.75181',
+    lng: '-120.04258',
     state: "NV",
     price: "$$$$"
   )
@@ -114,6 +118,8 @@ ActiveRecord::Base
     zip_code: "95121",
     webpage: "theboilingcrab.com",
     phone_number: "408-532-6147",
+    lat: '37.30284',
+    lng: '-121.86420',
     state: "CA",
     price: "$"
   )
@@ -138,6 +144,8 @@ ActiveRecord::Base
     zip_code: "93144",
     webpage: "orignaljoes.com",
     phone_number: "408-221-6327",
+    lat: '37.71876',
+    lng: '-122.48299',
     state: "CA",
     price: "$$$"
   )
@@ -162,6 +170,8 @@ ActiveRecord::Base
     zip_code: "650-213-6520",
     webpage: "calibur.com",
     phone_number: "650-532-2247",
+    lat: '37.75177',
+    lng: '-122.46651',
     state: "CA",
     price: "$"
   )
@@ -187,6 +197,8 @@ ActiveRecord::Base
     zip_code: "94104",
     webpage: "gintoexpress.com",
     phone_number: "707-583-3058",
+    lat: '37.77661',
+    lng: '-122.40282',
     state: "CA",
     price: "$$"
   )
@@ -212,6 +224,8 @@ ActiveRecord::Base
     zip_code: "94104",
     webpage: "akikos.com",
     phone_number: "415-397-3218",
+    lat: '37.79070',
+    lng: '-122.40472',
     state: "CA",
     price: "$$$"
   )
@@ -237,6 +251,8 @@ ActiveRecord::Base
     zip_code: "94104",
     webpage: "Rintaro.com",
     phone_number: "415-323-4118",
+    lat: '37.76894',
+    lng: '-122.41516',
     state: "CA",
     price: "$$$"
   )
@@ -262,6 +278,8 @@ ActiveRecord::Base
     zip_code: "94104",
     webpage: "Grubbies.com",
     phone_number: "415-323-4118",
+    lat: '37.79439',
+    lng: '-122.39943',
     state: "CA",
     price: "$$"
   )
@@ -287,6 +305,8 @@ ActiveRecord::Base
     zip_code: "94104",
     webpage: "Wako.com",
     phone_number: "415-682-4338",
+    lat: '37.78314',
+    lng: '-122.46152',
     state: "CA",
     price: "$$$$"
   )
@@ -311,6 +331,8 @@ ActiveRecord::Base
     zip_code: "10848",
     webpage: "tophops.com",
     phone_number: "408-532-6147",
+    lat: '40.71806',
+    lng: '-73.98823',
     state: "NY",
     price: "$$"
   )
@@ -335,6 +357,8 @@ ActiveRecord::Base
     zip_code: "93241",
     webpage: "ArenaSF.com",
     phone_number: "650-273-7468",
+    lat: '37.75633',
+    lng: '-122.41850',
     state: "CA",
     price: "$$$$"
   )
@@ -359,6 +383,8 @@ ActiveRecord::Base
     zip_code: "93241",
     webpage: "Delmar.com",
     phone_number: "415-344-7468",
+    lat: '37.79984',
+    lng: '-122.43648',
     state: "CA",
     price: "$$$"
   )
@@ -383,6 +409,8 @@ ActiveRecord::Base
     zip_code: "93241",
     webpage: "Lusk.com",
     phone_number: "415-495-7468",
+    lat: '37.79582',
+    lng: '-122.39649',
     state: "CA",
     price: "$$$"
   )
@@ -408,6 +436,8 @@ ActiveRecord::Base
     zip_code: "93241",
     webpage: "Jaxson.com",
     phone_number: "415-925-7433",
+    lat: '37.79967',
+    lng: '-122.43623',
     state: "CA",
     price: "$"
   )
@@ -433,6 +463,8 @@ ActiveRecord::Base
     zip_code: "650-753-6500",
     webpage: "order.sweetgreen.com",
     phone_number: "415-521-6147",
+    lat: '37.56350',
+    lng: '-122.32603',
     state: "CA",
     price: "$"
   )
@@ -456,6 +488,8 @@ ActiveRecord::Base
     zip_code: "94532",
     webpage: "butterlettuce.com",
     phone_number: "415-521-6147",
+    lat: '37.80059',
+    lng: '-122.44072',
     state: "CA",
     price: "$$"
   )
@@ -479,6 +513,8 @@ ActiveRecord::Base
     zip_code: "94532",
     webpage: "Mixt.com",
     phone_number: "415-321-6147",
+    lat: '37.79877',
+    lng: '-122.43561',
     state: "CA",
     price: "$"
   )
@@ -502,6 +538,8 @@ ActiveRecord::Base
     zip_code: "94532",
     webpage: "green.com",
     phone_number: "415-222-3327",
+    lat: '37.80553',
+    lng: '-122.43246',
     state: "CA",
     price: "$$$"
   )
@@ -525,6 +563,8 @@ ActiveRecord::Base
     zip_code: "94532",
     webpage: "Kitava.com",
     phone_number: "415-112-3327",
+    lat: '37.76495',
+    lng: '-122.41948',
     state: "CA",
     price: "$$$"
   )

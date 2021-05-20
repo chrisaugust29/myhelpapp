@@ -1,4 +1,4 @@
-class MapMarket {
+class MapMarker {
   constructor(map) {
     this.map = map;
     this.markers = {};
@@ -6,9 +6,9 @@ class MapMarket {
   }
 
   updateMarkers(businesses) {
-    let businessesObj = {};
+    let busiObj = {};
 
-    businesses.forEach((business) => (businessesObj[business.id] = business));
+    businesses.forEach((business) => (busiObj[business.id] = business));
     businesses
       .filter((business) => !this.markers[business.id])
       .forEach((newBusiness) => {
@@ -21,11 +21,11 @@ class MapMarket {
     const position = new google.maps.LatLng(business.lat, business.lng);
     const marker = new google.maps.Marker({
       position,
-      label: {
-        text: this.markerLabel.toString(),
-        color: "#ffffff",
-        fontWeight: "bold",
-      },
+    //   label: {
+    //     text: this.markerLabel.toString(),
+    //     color: "#ffffff",
+    //     fontWeight: "bold",
+    //   },
       map: this.map,
       businessId: business.id,
     });
