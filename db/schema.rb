@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_13_224523) do
+ActiveRecord::Schema.define(version: 2021_05_20_180020) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,8 @@ ActiveRecord::Schema.define(version: 2021_04_13_224523) do
     t.datetime "updated_at", null: false
     t.string "state", null: false
     t.string "price", null: false
+    t.float "lng"
+    t.float "lat"
     t.index ["creator_id"], name: "index_businesses_on_creator_id"
   end
 

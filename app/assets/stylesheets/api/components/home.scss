@@ -110,7 +110,7 @@
 .splash-item-box {
     display: flex;
     flex-direction: row;
-    height: 300px;
+    height: 250px;
     width: 900px;
     justify-content: space-between;
     
@@ -130,7 +130,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     // background-position-x: -20px;
-    height: 80%
+    height: 100%
 }
 
 .all-category-words {
@@ -149,7 +149,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -20px;
-    height: 80%
+    height: 100%
 }
 
 .american-words {
@@ -166,7 +166,7 @@
     background-image: asset-url("japan.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80%
+    height: 100%
 }
 
 .japan-words {
@@ -183,7 +183,7 @@
     background-image: asset-url("bar.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80%
+    height: 100%
 }
 
 .bar-words {
