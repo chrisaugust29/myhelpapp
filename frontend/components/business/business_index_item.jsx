@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 class BusinessIndexItem extends React.Component {
     render() {
         let { id, name, category, street, city, zip_code, state,
-             phone_number, rating, price, photoUrls } = this.props.business;
+             phone_number, rating, price, photoUrls, lat, lng } = this.props.business;
         return (
             <div>
                 <Link to={`/businesses/${id}`}>

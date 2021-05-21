@@ -11,7 +11,9 @@
                         :webpage, 
                         :phone_number, 
                         :state, 
-                        :price
+                        :price,
+                        :lat,
+                        :lng
 
   json.photoUrls @business.photos.map { |file| url_for(file)}
     # if @business.photos.attached?

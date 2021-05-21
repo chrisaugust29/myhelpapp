@@ -9,5 +9,7 @@ json.extract! business, :id,
                         :phone_number, 
                         :state, 
                         :price,
+                        :lat,
+                        :lng
 
 

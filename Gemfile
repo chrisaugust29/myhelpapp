@@ -29,7 +29,7 @@ gem 'pry-rails'
 gem 'annotate'
 gem 'bcrypt', '~> 3.1.7'
 gem 'jquery-rails'
-gem 'figaro'
+# gem 'figaro'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 # Use Capistrano for deployment
