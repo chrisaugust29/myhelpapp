@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import BusinessIndexItem from "./business_index_item";
 import HeaderContainer from '../header/header_container'
+import Map from '../map/map'
 import Footer from '../footer/footer'
 
 class BusinessIndex extends React.Component {
@@ -31,6 +32,9 @@ class BusinessIndex extends React.Component {
                                     key={index}
                                 />)
                                 }
+                            </div>
+                             <div className="map-box">
+                                <Map className="map" businesses={businesses} />
                             </div>
                         </div>
                     </div>

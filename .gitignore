@@ -31,3 +31,6 @@ master.key
 
 public/assets/*
 node_modules/
+
+# Ignore application configuration
+/config/application.yml

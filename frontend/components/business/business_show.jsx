@@ -2,6 +2,7 @@ import React from 'react'
 import HeaderContainer from '../header/header_container'
 import { Link } from 'react-router-dom';
 import ReviewIndexContainer from '../reviews/review_index_container'
+import Map from '../map/map'
 
 
 class BusinessShow extends React.Component {
@@ -109,7 +110,16 @@ class BusinessShow extends React.Component {
                             <div className="rev-index-box">
                                 <ReviewIndexContainer users={this.props.users} reviews={reviews} />
                             </div>
-                        </div>           
+                        </div>    
+                        <div className="show-right-box">
+                        {/* <div className="show-info-map-box">        
+                            <Map
+                            businesses={[this.props.business]}
+                            lat={lat}
+                            lng={lng}
+                            />  
+                        </div> */}
+                        </div>       
                 </div>
             
             )};
