@@ -54,7 +54,9 @@ class ReviewIndexItem extends React.Component {
        
         let dates = this.props.review.created_at
         let { first_name, last_name } = this.props.review
-
+        // console.log("bisid",this.props)
+        // console.log("bisid2",this.business_id)
+        // if (this.props.businesses.id === this.props.review.business_id)
         return (
             <div>
                 <div className='rev-box'>
