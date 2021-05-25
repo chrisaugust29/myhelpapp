@@ -9,7 +9,7 @@ const mapStateToProps= (state,ownProps) => {
     return ({
         currentUser: state.session.id,
         ownProps,
-        reviews: Object.values(state.entities.reviews)
+        // reviews: Object.values(state.entities.reviews)
     })
 }
 

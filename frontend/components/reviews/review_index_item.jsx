@@ -51,12 +51,12 @@ class ReviewIndexItem extends React.Component {
     }
 
     render() {
-       
+       console.log("thisman2",this.props)
+       console.log(this.props.review.business_id)
+       console.log(this.props.id)
         let dates = this.props.review.created_at
         let { first_name, last_name } = this.props.review
-        // console.log("bisid",this.props)
-        // console.log("bisid2",this.business_id)
-        // if (this.props.businesses.id === this.props.review.business_id)
+
         return (
             <div>
                 <div className='rev-box'>
