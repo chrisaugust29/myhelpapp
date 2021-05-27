@@ -21,7 +21,7 @@ class BusinessShow extends React.Component {
         }
     }
     render() {
-        console.log("thisman",this.props)
+
         let { business, reviews } = this.props
             if ((business === undefined) || (reviews === undefined)){
                 return null
