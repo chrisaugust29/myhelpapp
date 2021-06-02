@@ -204,6 +204,7 @@ ActiveRecord::Base
     phone_number: "707-583-3058",
     lat: '37.77661',
     lng: '-122.40282',
+    info: 'Come eat some fresh sushi you will love this place in SF!',
     state: "CA",
     price: "$$"
   )
@@ -231,6 +232,7 @@ ActiveRecord::Base
     phone_number: "415-397-3218",
     lat: '37.79070',
     lng: '-122.40472',
+    info: 'Feels like you are in japan! Fresh Fish everyday',
     state: "CA",
     price: "$$$"
   )
@@ -258,6 +260,7 @@ ActiveRecord::Base
     phone_number: "415-323-4118",
     lat: '37.76894',
     lng: '-122.41516',
+    info: 'Sushi here is very fresh! I love it here would come back',
     state: "CA",
     price: "$$$"
   )
@@ -285,6 +288,7 @@ ActiveRecord::Base
     phone_number: "415-323-4118",
     lat: '37.79439',
     lng: '-122.39943',
+    info: 'Fresh Fish everyday!',
     state: "CA",
     price: "$$"
   )
@@ -312,6 +316,7 @@ ActiveRecord::Base
     phone_number: "415-682-4338",
     lat: '37.78314',
     lng: '-122.46152',
+    info: 'Best Sushi in SF come grab your OMAKASE!',
     state: "CA",
     price: "$$$$"
   )
@@ -338,6 +343,7 @@ ActiveRecord::Base
     phone_number: "408-532-6147",
     lat: '40.71806',
     lng: '-73.98823',
+    info: 'Beers, food and more!',
     state: "NY",
     price: "$$"
   )
@@ -364,6 +370,7 @@ ActiveRecord::Base
     phone_number: "650-273-7468",
     lat: '37.75633',
     lng: '-122.41850',
+    info: 'Come and dance with ABGs, drink some beer relax!',
     state: "CA",
     price: "$$$$"
   )
@@ -390,6 +397,7 @@ ActiveRecord::Base
     phone_number: "415-344-7468",
     lat: '37.79984',
     lng: '-122.43648',
+    info: 'Fun an relaxing enviroment stress free!',
     state: "CA",
     price: "$$$"
   )
@@ -416,6 +424,7 @@ ActiveRecord::Base
     phone_number: "415-495-7468",
     lat: '37.79582',
     lng: '-122.39649',
+    info: 'Enjoy a beer on us buy one get one free',
     state: "CA",
     price: "$$$"
   )
@@ -443,6 +452,7 @@ ActiveRecord::Base
     phone_number: "415-925-7433",
     lat: '37.79967',
     lng: '-122.43623',
+    info: 'Fun country bar to drink with friends', 
     state: "CA",
     price: "$"
   )
@@ -470,6 +480,7 @@ ActiveRecord::Base
     phone_number: "415-521-6147",
     lat: '37.56350',
     lng: '-122.32603',
+    info: 'Eat a bowl of salad and be healthy!',
     state: "CA",
     price: "$"
   )
@@ -495,6 +506,7 @@ ActiveRecord::Base
     phone_number: "415-521-6147",
     lat: '37.80059',
     lng: '-122.44072',
+    info: 'good for your soul!',
     state: "CA",
     price: "$$"
   )
@@ -520,6 +532,7 @@ ActiveRecord::Base
     phone_number: "415-321-6147",
     lat: '37.79877',
     lng: '-122.43561',
+    info: 'Chipotle bar, nah salad bar!',
     state: "CA",
     price: "$"
   )
@@ -545,6 +558,7 @@ ActiveRecord::Base
     phone_number: "415-222-3327",
     lat: '37.80553',
     lng: '-122.43246',
+    info: 'I am greener than money, salad is wealth!',
     state: "CA",
     price: "$$$"
   )
@@ -570,6 +584,7 @@ ActiveRecord::Base
     phone_number: "415-112-3327",
     lat: '37.76495',
     lng: '-122.41948',
+    info: 'Please come..',
     state: "CA",
     price: "$$$"
   )
