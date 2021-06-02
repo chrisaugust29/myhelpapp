@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import BusinessIndexItem from "./business_index_item";
 import HeaderContainer from '../header/header_container'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheckCircle, faCheck, faTimes, faExternalLinkAlt, faPhoneAlt, faMapSigns, faStar } from '@fortawesome/free-solid-svg-icons';
 import Map from '../map/map'
 import Footer from '../footer/footer'
 

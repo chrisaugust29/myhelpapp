@@ -3,6 +3,7 @@ import HeaderContainer from '../header/header_container'
 import { Link } from 'react-router-dom';
 import ReviewIndexContainer from '../reviews/review_index_container'
 import Map from '../map/map'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 class BusinessShow extends React.Component {

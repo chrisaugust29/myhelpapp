@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class BusinessIndexItem extends React.Component {
     render() {
@@ -22,29 +23,37 @@ class BusinessIndexItem extends React.Component {
                                         <div className="item-name">
                                             {name}
                                         </div>
-                                        <div>{category}</div>
-                                        <div className="price">{price}</div>
-                                            
-                                            
+                                        <div>{rating}</div>
+                                        <p className="rating">
+                                            <i className='fas fa-star'></i>
+                                            <i className="fas fa-star"></i>
+                                            <i className="fas fa-star"></i>
+                                            <i className="fas fa-star"></i>
+                                        </p>
+                                        <div className="price">PRICE:{price}</div>
                                         
                                     </div>
                                     <div className="info-item-box">
                                         <ul>
+                                            {/* <li>
+                                                <i className="category"></i> {category}
+                                            </li>
+                                             */}
+                                            <li>
+                                                <i className="fas fa-phone-square-alt"></i> {phone_number}
+                                            </li>
+                                            <li>
+                                                <i className="fas fa-map-marker-alt"></i> {street}
+                                            </li>
+                                            <li>
+                                                {city}, <i className="state"></i> {state} <i className="zip"></i> {zip_code}
+                                            </li>
                                             
-                                            <li>
-                                                <i className="phone"></i> {phone_number}
-                                            </li>
-                                            <li>
-                                                <i className="street"></i> {street}
-                                            </li>
-                                            <li>
-                                                {city}
-                                            </li>
-                                            <li>
-                                                <i className="state"></i> {state}, <i className="zip"></i> {zip_code}
-                                            </li>
                 
                                         </ul>
+                                    </div>
+                                    <div className="info-item-icon-box">
+                                            
                                     </div>
                                 </div>
                             </div>
