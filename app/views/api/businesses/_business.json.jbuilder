@@ -10,6 +10,7 @@ json.extract! business, :id,
                         :state, 
                         :price,
                         :lat,
-                        :lng
+                        :lng,
+                        :info
 
 

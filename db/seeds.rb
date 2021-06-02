@@ -68,6 +68,7 @@ ActiveRecord::Base
     phone_number: "415-584-3058",
     lat: '37.71781',
     lng: '-122.47386',
+    info: 'Hamburgers, burgers, cheeseburgers, avocado, hot dogs, chilli cheese Fries, milkshakes',
     state: "CA",
     price: "$$"
   )
@@ -94,6 +95,7 @@ ActiveRecord::Base
     phone_number: "702-731-7373",
     lat: '39.75181',
     lng: '-120.04258',
+    info: 'Loved the atmosphere and the strawberry pancake! I very much enjoyed the chill vibe hospitality of the service.',
     state: "NV",
     price: "$$$$"
   )
@@ -120,6 +122,7 @@ ActiveRecord::Base
     phone_number: "408-532-6147",
     lat: '37.30284',
     lng: '-121.86420',
+    info: 'When you have that craving for a good seafood boil, Boiling Crab definitely hits! I feel like now more than ever is the best time to order.',
     state: "CA",
     price: "$"
   )
@@ -146,6 +149,7 @@ ActiveRecord::Base
     phone_number: "408-221-6327",
     lat: '37.71876',
     lng: '-122.48299',
+    info: 'I went to this place thinking it was the fancy one, the restaurant mentioned frequently on craigslist. I was pleasantly surprised by the prices, for being such a high end restaurant. Offers reservations',
     state: "CA",
     price: "$$$"
   )
@@ -172,6 +176,7 @@ ActiveRecord::Base
     phone_number: "650-532-2247",
     lat: '37.75177',
     lng: '-122.46651',
+    info: 'Took my Mom and Dad here for a late Mothers Day lunch. I couldnt take her on the weekend. It is my Dads favorite restaurant and my Mom loves it to',
     state: "CA",
     price: "$"
   )

@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 class BusinessIndexItem extends React.Component {
     render() {
         let { id, name, category, street, city, zip_code, state,
-             phone_number, rating, price, photoUrls, lat, lng } = this.props.business;
+             phone_number, rating, price, photoUrls, lat, lng, info } = this.props.business;
         return (
             <div>
                 <Link to={`/businesses/${id}`}>
@@ -30,7 +31,7 @@ class BusinessIndexItem extends React.Component {
                                             <i className="fas fa-star"></i>
                                             <i className="fas fa-star"></i>
                                         </p>
-                                        <div className="price">PRICE:{price}</div>
+                                        <div className="price">{price} - {category} </div>
                                         
                                     </div>
                                     <div className="info-item-box">
@@ -48,13 +49,37 @@ class BusinessIndexItem extends React.Component {
                                             <li>
                                                 {city}, <i className="state"></i> {state} <i className="zip"></i> {zip_code}
                                             </li>
-                                            
-                
                                         </ul>
                                     </div>
-                                    <div className="info-item-icon-box">
-                                            
+                                </div>
+                                <div className="info-item-icon-box">
+                                    <div className="iout">
+                                        <FontAwesomeIcon 
+                                        icon={faCheck}
+                                        fixedWidth
+                                        color="green"
+                                        />
+                                        <span>Outdoor-Seating</span>
                                     </div>
+                                    <div className="itake">
+                                        <FontAwesomeIcon
+                                        icon={faCheck}
+                                        fixedWidth
+                                        color="green"
+                                        />
+                                        <span>Takeout</span>
+                                    </div>
+                                    <div className="idel">
+                                        <FontAwesomeIcon
+                                        icon={faTimes}
+                                        fixedWidth
+                                        color="black"
+                                        />
+                                        <span>Delivery</span>
+                                    </div>         
+                                </div>
+                                 <div className="binfo-box">
+                                    "{info}"
                                 </div>
                             </div>
                             

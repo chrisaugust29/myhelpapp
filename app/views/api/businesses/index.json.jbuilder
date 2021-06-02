@@ -14,7 +14,8 @@
                         :state, 
                         :price,
                         :lat,
-                        :lng
+                        :lng,
+                        :info
                 
 
   json.photoUrls business.photos.map { |file| url_for(file)}

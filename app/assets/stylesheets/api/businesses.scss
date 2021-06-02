@@ -29,6 +29,7 @@
     height: 300px;
     border-top: 1px solid rgba(221, 221, 221, 0.966);
     font-size: 15px;
+    width: 700px;
 
 }
 .index-item-box:hover {
@@ -53,7 +54,7 @@
 }
 .info-box{
     margin-left: 16px;
-    width: 375px;
+    width: 500px;
 }
 
 .info-top-box{
@@ -68,9 +69,9 @@
 }
 
 .item-name{
-    margin-top: 5px;
+    margin-top: 0px;
     color: #314f8a;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     
 }
@@ -85,7 +86,14 @@
     margin-top: 5px;
     width: 50%;
     // text-align: end;
-    margin-left: 50px;
+    margin-left: 75px;
 }
 
+.info-item-icon-box{
+    display: flex;
+}
+
+.info-item-icon-box div{
+    margin-right: 15px;
+}
 
