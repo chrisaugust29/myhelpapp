@@ -55,7 +55,6 @@ class BusinessShow extends React.Component {
                                         </p>
                                         <p className="biz-info-category">
                                             <span>{price} • {category}</span>
-                
                                         </p>
                                         <span className="top-writeareview">
                                             <Link to={`/businesses/${business.id}/newreview`}>
@@ -63,7 +62,7 @@ class BusinessShow extends React.Component {
                                             </Link>
                                         </span>
 
-                                        
+
                                     </div>
                                 </div>
                                 <div className="contact-info">
@@ -81,6 +80,86 @@ class BusinessShow extends React.Component {
                                    
                                     <div/>
                                 </div>
+                                <div className="covid">  COVID-19 Updates</div>
+                                <div className="covid-msg">"Updated March 31, 2021. Indoor Dining Is BACK!! For Pick-Up/Delivery Order Online at theboulevardcafe.com Thanksgiving meals served every Thursday! Corned Beef & Cabbage every Wednesday! Cocktails, Beer & Wine, and Mimosa Kits available for take-out!</div>
+                                <div className="service">  Updated Services</div>
+                                <div className="info-item-icon-box1">
+                                    <div className="iout">
+                                        <FontAwesomeIcon 
+                                        icon={faCheck}
+                                        fixedWidth
+                                        color="green"
+                                        />
+                                        <span>Outdoor-Seating</span>
+                                    </div>
+                                    <div className="itake">
+                                        <FontAwesomeIcon
+                                        icon={faCheck}
+                                        fixedWidth
+                                        color="green"
+                                        />
+                                        <span>Takeout</span>
+                                    </div>
+                                    <div className="idel">
+                                        <FontAwesomeIcon
+                                        icon={faTimes}
+                                        fixedWidth
+                                        color="red"
+                                        />
+                                        <span>Delivery</span>
+                                    </div>
+                                    <div className="itake">
+                                        <FontAwesomeIcon
+                                        icon={faCheck}
+                                        fixedWidth
+                                        color="green"
+                                        />
+                                        <span>Curbside pickup</span>
+                                    </div> 
+                                      <div className="idel">
+                                        <FontAwesomeIcon
+                                        icon={faTimes}
+                                        fixedWidth
+                                        color="red"
+                                        />
+                                        <span>Private Dining</span>
+                                    </div> 
+                                       {/* <div className="idel">
+                                        <FontAwesomeIcon
+                                        icon={faTimes}
+                                        fixedWidth
+                                        color="red"
+                                        />
+                                        <span>DIY meal kits</span>
+                                    </div>           */}
+                                </div>
+                                <div className="health">  Health and Safety Mesures</div>
+                                 <div className="info-item-icon-box">
+                                    <div className="iout">
+                                        <FontAwesomeIcon 
+                                        icon={faCheck}
+                                        fixedWidth
+                                        color="green"
+                                        />
+                                        <span>Temperature Checks</span>
+                                    </div>
+                                    <div className="itake">
+                                        <FontAwesomeIcon
+                                        icon={faCheck}
+                                        fixedWidth
+                                        color="green"
+                                        />
+                                        <span>Hand sanitizer provided</span>
+                                    </div>
+                                    <div className="idel">
+                                        <FontAwesomeIcon
+                                        icon={faTimes}
+                                        fixedWidth
+                                        color="red"
+                                        />
+                                        <span> More than 6 per party</span>
+                                    </div>
+                                </div>    
                                 <div className="mid-header">
                                     Hours open and Location 
                                 </div>
@@ -123,14 +202,14 @@ class BusinessShow extends React.Component {
                                             />  
                                     </div>
                                 </div>
-                                
-                            </div>
-                        <div className = "rev-container">
+                                 <div className = "rev-container">
                             <div className="bis-reviews">Helper's Reviews</div>      
                             <div className="rev-index-box">
                                 <ReviewIndexContainer users={this.props.users} reviews={reviews} />
                             </div>
-                        </div>    
+                        </div>   
+                            </div>
+                        
                             
                 </div>
             

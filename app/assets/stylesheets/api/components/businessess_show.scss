@@ -36,7 +36,7 @@
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     display: block;
     justify-content: center;
-    margin-left: auto;
+    margin-left: 25%;
     margin-right: auto;
     width: 800px;
     height: fit-content;
@@ -57,7 +57,7 @@
 }
 .show-top-info p:first-child{
      font-weight: 650;
-    font-size: 40px;
+    font-size: 50px;
     line-height: 36px;
     color: #122477;
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -116,16 +116,63 @@
     padding-bottom: 16px;
 }
 
+.covid{
+    display: block;
+    width: 800px;
+    margin-top: 25px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 650;
+    font-size: 20px;
+    line-height: 36px;
+    color: #122477;
+}
 
+.covid-msg{
+    font-size: 16px;
+}
+
+.service{
+    display: block;
+    width: 800px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 650;
+    font-size: 20px;
+    line-height: 36px;
+    color: #122477;
+}
+.health{
+    display: block;
+    width: 800px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 650;
+    font-size: 20px;
+    line-height: 36px;
+    color: #122477;
+}
+.info-item-icon-box1{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.covid-msg{
+    width: 650px;
+}
 .mid-header{
     display: block;
     width: 800px;
-    margin-top: 60px;
+    margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: 650;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 36px;
     color: #122477;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
@@ -149,13 +196,14 @@
     flex-direction: column;
     padding-top: .5rem;
     margin-bottom: 3rem;
+    font-size: 20px;
 }
 
 
 .week-items{
     display: flex;
     margin-bottom: 2.5px;
-    font-size: 20px;
+    font-size: 18px;
     color: #1b1b1b;
 }
 
@@ -183,15 +231,16 @@
 }
 
 .bis-reviews{
-    display: block;
+     display: block;
     width: 800px;
-    margin-top: 25px;
-    padding-top: 5px;
+    margin-top: 20px;
     padding-bottom: 10px;
-    font-weight: 700;
-    font-size: 30px;
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 650;
+    font-size: 20px;
+    line-height: 36px;
     color: #122477;
+   
 }
     .rev-index-box{
     
