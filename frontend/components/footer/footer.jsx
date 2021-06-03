@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const footer = () => (
+const Footer = () => (
     <div className="footer">
         <div className="footer-container">
             <a className="github" target="_blank" href="https://github.com/chrisaugust29">
@@ -18,4 +18,4 @@ const footer = () => (
     </div>
 );
 
-export default footer;
+export default Footer;

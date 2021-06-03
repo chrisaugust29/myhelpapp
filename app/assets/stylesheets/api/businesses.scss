@@ -65,14 +65,16 @@
 
 .info-top-left{
     border: green;
-    width: 45%;
+    width: 50%;
 }
 
 .item-name{
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     margin-top: 0px;
     color: #314f8a;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 28px;
+    font-weight: 1000;
+    margin-bottom: 5px;
     
 }
 
@@ -83,6 +85,10 @@
 // index item details
 .price { 
     margin-top:5px;
+    font-weight: normal;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+     color: rgba(117,114,128,1);
+    
     
 }
 
@@ -91,13 +97,37 @@
     width: 50%;
     // text-align: end;
     margin-left: 75px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: normal;
 }
 
 .info-item-icon-box{
     display: flex;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 .info-item-icon-box div{
     margin-right: 15px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
+.binfo-box{
+    width: 425px;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    // color: #9a99a3;
+    font-weight: normal;
+    color: rgba(117,114,128,1);
+}
+
+.busi-intro{
+     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    margin-left: 30px;
+    margin-top: 5x;
+    margin-bottom: 15px;
+    font-weight: 900;
+}

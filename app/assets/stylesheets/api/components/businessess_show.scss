@@ -50,6 +50,7 @@
     font-size: 40px;
     line-height: 36px;
     color: #122477;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 .rating > i {
@@ -108,14 +109,12 @@
     margin-top: 60px;
     padding-top: 20px;
     padding-bottom: 20px;
-    
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-
-    
-    font-weight: 700;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 650;
     font-size: 30px;
+    line-height: 36px;
     color: #122477;
-
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .hours-box{
@@ -177,6 +176,7 @@
     padding-bottom: 10px;
     font-weight: 700;
     font-size: 30px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     color: #122477;
 }
     .rev-index-box{

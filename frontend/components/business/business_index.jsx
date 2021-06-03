@@ -25,6 +25,7 @@ class BusinessIndex extends React.Component {
                 <div>
                     <HeaderContainer />
                     <div className="busi-index-box">
+                    {/* <div className="busi-intro">Browsing Best Restaurants near San Francisco Bay Area, CA </div>     */}
                         <div className="busi-index-box2">
                             <div className="items-box">
                                 {businesses.map((business, index) => 

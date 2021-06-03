@@ -73,7 +73,7 @@ class BusinessIndexItem extends React.Component {
                                         <FontAwesomeIcon
                                         icon={faTimes}
                                         fixedWidth
-                                        color="black"
+                                        color="red"
                                         />
                                         <span>Delivery</span>
                                     </div>         
