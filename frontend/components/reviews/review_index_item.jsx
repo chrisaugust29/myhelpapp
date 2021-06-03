@@ -63,22 +63,21 @@ class ReviewIndexItem extends React.Component {
                     <div className='rev-author'>
                         <div className='photo-box'>
                             <img className='face-photo'
-                                src={window.face} />
-                        
+                                src={window.face} 
+                            />
+                        </div>
                         <div className='author-name'>
                             {first_name}&nbsp;{last_name}
-                            <div className='review-item-rating'>
-                                <div className="review-stars">
-                                    <p className="rating">
-                                        <i className='fas fa-star'></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        
-                                    </p>
-                                 </div>
-                            </div>
-                            </div>
+                        </div>
+                    </div>
+                    <div className='review-item-rating'>
+                        <div className="review-stars">
+                            <p className="rating">
+                                <i className='fas fa-star'></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                            </p>
                         </div>
                     </div>
                     <div className='rev-body'>

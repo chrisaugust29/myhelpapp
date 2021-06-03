@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import ReviewIndexContainer from '../reviews/review_index_container'
 import Map from '../map/map'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import { faCheckCircle, faCheck, faTimes, faExternalLinkAlt, faPhoneAlt, faMapSigns, faStar } from '@fortawesome/free-solid-svg-icons';
 
 class BusinessShow extends React.Component {
     constructor(props) {
@@ -62,13 +62,24 @@ class BusinessShow extends React.Component {
                                             <i className="fas fa-star" /> Write a Review
                                             </Link>
                                         </span>
+
+                                        
                                     </div>
                                 </div>
                                 <div className="contact-info">
-                                    <div id="info"><i  />{phone_number}</div>
-                                    <div id="info"><i  />{webpage}</div>
-                                    <div id="info"><i /> Full Menu</div>
-                                    <div id="info"><i /> Contact the Business</div>
+                                     <div className = "website">
+                                        <FontAwesomeIcon
+                                        icon={faExternalLinkAlt}
+                                        size="lg"
+                                        />
+                                        <a className="web-url" href={webpage} target="_blank">{webpage}</a>
+                                        
+                                    </div>
+                                    <div id="info">  <i className="fas fa-phone-square-alt"></i> {phone_number}</div>
+                                    <div id="info"><i className="fas fa-map-marker-alt"></i> {street}</div>
+                                    <div id="info"> {city}, <i className="state"></i> {state} <i className="zip"></i> {zip_code}</div>
+                                   
+                                    <div/>
                                 </div>
                                 <div className="mid-header">
                                     Hours open and Location 
