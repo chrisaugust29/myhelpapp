@@ -30,6 +30,7 @@ class MapMarker {
       businessId: business.id,
     });
     this.markers[marker.businessId] = marker;
+    
   }
 }
 
