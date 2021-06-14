@@ -31,6 +31,7 @@ class MapMarker {
     });
     this.markers[marker.businessId] = marker;
     
+
   }
 }
 
