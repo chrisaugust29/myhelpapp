@@ -29,8 +29,9 @@ class MapMarker {
       map: this.map,
       businessId: business.id,
     });
-    this.markers[marker.businessId] = marker;
     
+    this.markers[marker.businessId] = marker;
+
 
   }
 }
