@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Footer from '../footer/footer';
-import Search from '../search/search';
+import Search from '../search/search_container';
 
 class Home extends React.Component {
     constructor(props) {

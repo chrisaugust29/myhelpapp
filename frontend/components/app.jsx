@@ -15,10 +15,12 @@ import BarsIndex from './business/categories/bars_index'
 import ReviewFormContainer from "./reviews/review_form_container";
 import EditReviewFormContainer from "./reviews/edit_review_form_container";
 import Footer from './footer/footer'
+import SearchContainer from "./search/search_container";
 
 const App = () => (
     <div>
      < Switch>
+     {/* <Route path='/search/' component={SearchContainer} /> */}
         <AuthRoute exact path="/signup" component={SignupFormContainer} />
         <AuthRoute exact path="/login" component={LoginFormContainer} />
         <Route exact path="/" component={HomeContainer} />
