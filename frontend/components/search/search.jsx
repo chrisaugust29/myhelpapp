@@ -107,7 +107,7 @@ class Search extends React.Component{
           <ul className="f-list">
             {results}
             <Link to={'/businesses'}>
-              <li className="more-biz" onClick={this.selectName}>More Businesses Here</li>
+              <li className="more" onClick={this.selectName}>More Businesses Here</li>
             </Link>
           </ul>
         </div>
