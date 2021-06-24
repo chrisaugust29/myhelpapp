@@ -87,24 +87,24 @@ class Search extends React.Component{
 
     if (!this.props.names) return null;
     return(
-      <div className="parent-search-container">
+      <div className="p-search">
 
-        <div className="search-bar-container">
+        <div className="s-bar-container">
 
           <input 
-            className="search-bar"
+            className="s-bar"
             type="search" 
-            placeholder="noodles, Chinese, Rintaro..." 
+            placeholder="Burgers, Japanese, Beer, Ginto.." 
             onChange={this.handleInput}
             value={this.state.inputName}
             onKeyDown={(e) => (e.which == 13 ? this.handleSubmit(e) : null) } 
           />
 
-          <button className="search-bar-button" onClick={(e) => this.handleSubmit(e)}>
-            <div className="search-bar-icon"/>
+          <button className="s-button" onClick={(e) => this.handleSubmit(e)}>
+            <div className="s-icon"/>
           </button>
 
-          <ul className="floating-list">
+          <ul className="f-list">
             {results}
             <Link to={'/businesses'}>
               <li className="more-biz" onClick={this.selectName}>More Businesses Here</li>
