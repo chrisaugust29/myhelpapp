@@ -61,7 +61,7 @@ class Search extends React.Component{
 
    
     render() {
-        // console.log("search", this.props)
+
     if (this.props.names && this.state.redirect && this.matches().length) {
       return (
         <div>

@@ -11,7 +11,7 @@ class EditReview extends React.Component {
   }
 
   render(){
-      console.log("this1",props)
+
     if (!this.props.review) return null
       return (
         <div>
