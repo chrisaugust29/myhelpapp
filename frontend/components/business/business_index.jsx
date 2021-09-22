@@ -18,9 +18,7 @@ class BusinessIndex extends React.Component {
         this.props.fetchBusinesses();
     }
     render() {
-        // if (!this.props.businesses.length)
-        //     return null;
-        // else {
+    
             let { businesses, fetchBusinesses } = this.props
             return (
                 <div>
@@ -32,7 +30,6 @@ class BusinessIndex extends React.Component {
                                 {businesses.map((business, index) => 
                                 <BusinessIndexItem
                                     business={business}
-                                    // key={business.id}
                                     key={index}
                                 />)
                                 }
