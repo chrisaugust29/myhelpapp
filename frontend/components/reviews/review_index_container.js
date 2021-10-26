@@ -1,8 +1,7 @@
-import React from 'react';
+
 import { deleteReview } from '../../actions/review_actions';
 import ReviewIndex from './review_index';
 import { connect } from 'react-redux';
-import { editReview } from '../../actions/review_actions'
 import { fetchReviews } from '../../actions/review_actions';
 
 const mapStateToProps= (state,ownProps) => {
