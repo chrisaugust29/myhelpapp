@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 class BusinessIndexItem extends React.Component {
+    
     render() {
         let { id, name, category, street, city, zip_code, state,
              phone_number, rating, price, photoUrls, lat, lng, info } = this.props.business;
