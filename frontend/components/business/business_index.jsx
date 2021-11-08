@@ -31,7 +31,8 @@ class BusinessIndex extends React.Component {
                                 <BusinessIndexItem
                                     business={business}
                                     key={index}
-                                />)
+                                />
+                                )
                                 }
                             </div>
                              <div className="map-box">
